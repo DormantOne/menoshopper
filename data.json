@@ -1,0 +1,1054 @@
+{
+  "references": {
+    "HARVARD_FIBER": {
+      "title": "Harvard T.H. Chan — The Nutrition Source: Fiber",
+      "url": "https://nutritionsource.hsph.harvard.edu/carbohydrates/fiber/"
+    },
+    "NIH_ODS_VITD": {
+      "title": "NIH Office of Dietary Supplements — Vitamin D Fact Sheet",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminD-Consumer/"
+    },
+    "DGA_VITD_FOODS": {
+      "title": "Dietary Guidelines for Americans — Food Sources of Vitamin D",
+      "url": "https://www.dietaryguidelines.gov/resources/2020-2025-dietary-guidelines-online-materials/food-sources-select-nutrients/food-sources-vitamin-d"
+    },
+    "NIH_ODS_VITK": {
+      "title": "NIH Office of Dietary Supplements — Vitamin K Fact Sheet",
+      "url": "https://ods.od.nih.gov/pdf/factsheets/VitaminK-Consumer.pdf"
+    },
+    "NKF_CALCIUM_OXALATE": {
+      "title": "National Kidney Foundation — Calcium Oxalate Kidney Stones",
+      "url": "https://www.kidney.org/kidney-topics/calcium-kidney-stones"
+    },
+    "NIDDK_STONES": {
+      "title": "NIDDK — Eating, Diet, & Nutrition for Kidney Stones",
+      "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-stones/eating-diet-nutrition"
+    },
+    "MAYO_SOY_BC": {
+      "title": "Mayo Clinic — Soy & breast cancer risk",
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/expert-answers/soy-breast-cancer-risk/faq-20120377"
+    },
+    "AICR_SOY_CANCER": {
+      "title": "American Institute for Cancer Research — Soy & cancer prevention",
+      "url": "https://www.aicr.org/cancer-prevention/food-facts/soy/"
+    },
+    "PUBMED_MK7_STIFFNESS": {
+      "title": "PubMed — MK-7 3-year RCT: arterial stiffness in postmenopausal women",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25694037/"
+    },
+    "PUBMED_MK7_BMD": {
+      "title": "PubMed — MK-7 3-year RCT: bone mineral density outcomes",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33030563/"
+    },
+    "MAYO_MEDITERRANEAN": {
+      "title": "Mayo Clinic — Mediterranean diet overview",
+      "url": "https://www.mayoclinic.org/health/mediterranean-diet/CL00011"
+    },
+    "NKF_STONE_PREVENTION": {
+      "title": "National Kidney Foundation — Stone diet prevention basics",
+      "url": "https://www.kidney.org/kidney-topics/six-easy-ways-to-prevent-kidney-stones"
+    }
+  },
+  "symptoms": {
+    "hot_flashes": { "label": "Hot Flashes", "icon": "🔥" },
+    "sleep": { "label": "Sleep", "icon": "💤" },
+    "bone_joint": { "label": "Bones & Joints", "icon": "🦴" },
+    "fatigue": { "label": "Fatigue", "icon": "🔋" },
+    "gut": { "label": "Gut Health", "icon": "🍏" },
+    "stress": { "label": "Stress", "icon": "🧘" },
+    "weight": { "label": "Weight", "icon": "⚖️" },
+    "bloating": { "label": "Bloating", "icon": "🎈" },
+    "heart": { "label": "Heart", "icon": "❤️" },
+    "blood_sugar": { "label": "Blood Sugar", "icon": "🩸" },
+    "mood": { "label": "Mood", "icon": "🙂" },
+    "brain_fog": { "label": "Brain Fog", "icon": "🧠" },
+    "nausea": { "label": "Nausea", "icon": "🤢" }
+  },
+  "preferences": {
+    "plant_only": { "label": "Plant-Based", "icon": "🌱" },
+    "budget": { "label": "Budget", "icon": "💲" },
+    "gluten_free": { "label": "Gluten-Free", "icon": "🌾" },
+    "dairy_free": { "label": "Dairy-Free", "icon": "🥛" },
+    "low_fodmap": { "label": "Low-FODMAP", "icon": "🫧" },
+    "high_fiber": { "label": "High Fiber", "icon": "🌿" }
+  },
+  "items": [
+    {
+      "type": "do",
+      "id": 1,
+      "name": "Edamame",
+      "subtitle": "whole soy",
+      "emoji": "🫛",
+      "symptoms": ["hot_flashes", "bone_joint", "fatigue", "heart", "blood_sugar", "weight"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber", "budget"],
+      "isPlant": true,
+      "price": 2.99,
+      "unit": "frozen bag",
+      "availability": ["Regular supermarket", "Asian market"],
+      "benefit": "Whole-soy protein + fiber; isoflavones may reduce hot flashes in some.",
+      "impact": [
+        "Hot flashes: whole soy foods may reduce frequency/severity for some people.",
+        "Weight/blood sugar: protein + fiber improves fullness and steadier energy.",
+        "Heart: soy/legumes can support lipid-friendly eating patterns."
+      ],
+      "recipe": "Microwave/steam, sprinkle salt + lemon. Or toss into salad bowls.",
+      "cautions": [
+        "Soy allergy → avoid.",
+        "If on thyroid medication, take meds separately from high-fiber/soy meals.",
+        "Prefer whole soy foods over high-dose isoflavone supplements."
+      ],
+      "evidence": {
+        "level": "Moderate",
+        "summary": "Whole soy foods are commonly recommended over supplements; symptom response varies.",
+        "refs": ["MAYO_SOY_BC", "AICR_SOY_CANCER"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 2,
+      "name": "Tofu",
+      "subtitle": "whole soy protein",
+      "emoji": "⬜",
+      "symptoms": ["hot_flashes", "bone_joint", "weight", "blood_sugar", "heart"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "budget"],
+      "isPlant": true,
+      "price": 1.99,
+      "unit": "14–16oz block",
+      "availability": ["Regular supermarket", "Asian market"],
+      "benefit": "Whole soy isoflavones + protein; easy swap for higher-sat-fat proteins.",
+      "impact": [
+        "Hot flashes: soy foods may help some people.",
+        "Weight: protein helps satiety; easy to keep calories controlled.",
+        "Heart: supports Mediterranean-style, plant-forward patterns."
+      ],
+      "recipe": "Press 10 min, cube, air-fry 400°F ~12 min with soy sauce + garlic + ginger.",
+      "cautions": [
+        "Soy allergy → avoid.",
+        "Choose lower-sodium marinades if bloating/water retention."
+      ],
+      "evidence": {
+        "level": "Moderate",
+        "summary": "Whole soy foods are considered reasonable in dietary patterns; supplements differ.",
+        "refs": ["MAYO_SOY_BC", "AICR_SOY_CANCER"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 3,
+      "name": "Tempeh",
+      "subtitle": "fermented soy",
+      "emoji": "🧱",
+      "symptoms": ["hot_flashes", "gut", "weight", "blood_sugar", "heart"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber"],
+      "isPlant": true,
+      "price": 3.99,
+      "unit": "8oz",
+      "availability": ["Regular supermarket", "Natural foods store", "Asian market"],
+      "benefit": "Fermented whole soy: protein + some people find it gentler than beans.",
+      "impact": [
+        "Hot flashes: soy-based option (response varies).",
+        "Gut: fermented foods can be better tolerated for some.",
+        "Weight: high-protein plant option."
+      ],
+      "recipe": "Slice, pan-sear 3 min/side. Glaze with maple + mustard + garlic.",
+      "cautions": [
+        "Soy allergy → avoid.",
+        "Fermented foods can trigger symptoms in histamine-sensitive people (rare)."
+      ],
+      "evidence": {
+        "level": "Moderate",
+        "summary": "Whole soy foods are preferred over supplements; symptom response varies.",
+        "refs": ["MAYO_SOY_BC"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 4,
+      "name": "Ground Flax",
+      "subtitle": "lignans + fiber",
+      "emoji": "🌾",
+      "symptoms": ["hot_flashes", "gut", "heart", "blood_sugar", "weight"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber", "budget"],
+      "isPlant": true,
+      "price": 4.49,
+      "unit": "16oz bag",
+      "availability": ["Regular supermarket", "Natural foods store"],
+      "benefit": "Lignans + soluble fiber; supports gut and metabolic health.",
+      "impact": [
+        "Gut/bloating: helps regularity (increase slowly).",
+        "Blood sugar: fiber helps smooth glucose spikes.",
+        "Heart: fiber supports cholesterol-friendly eating."
+      ],
+      "recipe": "Add 1–2 Tbsp to oats, smoothies, yogurt, or soups.",
+      "cautions": [
+        "Increase slowly + water to prevent gas/bloating.",
+        "If on anticoagulants or with GI conditions, ask clinician about large increases in fiber."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "Dietary fiber benefits hunger/blood sugar/cholesterol; flax is a fiber-rich add-in.",
+        "refs": ["HARVARD_FIBER"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 5,
+      "name": "Sesame/Tahini",
+      "subtitle": "healthy fats",
+      "emoji": "🫙",
+      "symptoms": ["bone_joint", "heart", "blood_sugar", "weight"],
+      "tags": ["plant_only", "gluten_free", "dairy_free"],
+      "isPlant": true,
+      "price": 5.99,
+      "unit": "jar",
+      "availability": ["Regular supermarket", "Middle Eastern market"],
+      "benefit": "Healthy fats + minerals; easy calcium-adjacent add-in.",
+      "impact": [
+        "Bones: useful in a calcium-supportive diet pattern.",
+        "Satiety: fat + flavor helps meals feel satisfying."
+      ],
+      "recipe": "Whisk tahini + lemon + water + garlic = instant dressing.",
+      "cautions": [
+        "Sesame allergy → avoid.",
+        "Portion matters (energy-dense)."
+      ],
+      "evidence": {
+        "level": "Emerging",
+        "summary": "Supports overall nutrient-dense patterns; direct symptom data limited.",
+        "refs": ["MAYO_MEDITERRANEAN"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 6,
+      "name": "Walnuts",
+      "subtitle": "ALA omega-3",
+      "emoji": "🌰",
+      "symptoms": ["heart", "stress", "mood", "weight"],
+      "tags": ["plant_only", "gluten_free", "dairy_free"],
+      "isPlant": true,
+      "price": 7.99,
+      "unit": "bag",
+      "availability": ["Regular supermarket"],
+      "benefit": "ALA omega-3 + satiety fats; Mediterranean-friendly snack.",
+      "impact": [
+        "Heart: supports cardiometabolic eating pattern.",
+        "Mood/stress: nutrient-dense snack can stabilize energy."
+      ],
+      "recipe": "Add to oats/salads; or eat a small handful with fruit.",
+      "cautions": [
+        "Nut allergy → avoid.",
+        "Portion matters (calorie-dense)."
+      ],
+      "evidence": {
+        "level": "Moderate",
+        "summary": "Mediterranean-style patterns consistently support heart/metabolic health.",
+        "refs": ["MAYO_MEDITERRANEAN"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 7,
+      "name": "Steel-cut Oats",
+      "subtitle": "soluble fiber",
+      "emoji": "🥣",
+      "symptoms": ["blood_sugar", "weight", "heart", "gut"],
+      "tags": ["plant_only", "dairy_free", "high_fiber", "budget"],
+      "isPlant": true,
+      "price": 3.49,
+      "unit": "container",
+      "availability": ["Regular supermarket"],
+      "benefit": "Soluble fiber for hunger, cholesterol, and blood sugar.",
+      "impact": [
+        "Weight: fiber helps fullness; supports steady energy.",
+        "Blood sugar: slower digestion reduces spikes.",
+        "Gut: fiber supports regularity (increase slowly)."
+      ],
+      "recipe": "Cook 10–20 min; top with berries + flax + cinnamon.",
+      "cautions": [
+        "If gluten-sensitive, choose certified gluten-free oats.",
+        "Increase fiber gradually + fluids to reduce bloating."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "Fiber supports hunger and blood sugar control; soluble fiber can lower cholesterol.",
+        "refs": ["HARVARD_FIBER"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 8,
+      "name": "Barley",
+      "subtitle": "beta-glucan fiber",
+      "emoji": "🌾",
+      "symptoms": ["heart", "blood_sugar", "weight", "gut"],
+      "tags": ["plant_only", "dairy_free", "high_fiber", "budget"],
+      "isPlant": true,
+      "price": 2.49,
+      "unit": "bag",
+      "availability": ["Regular supermarket"],
+      "benefit": "Very high soluble fiber; great for soups/bowls.",
+      "impact": [
+        "Heart: soluble fiber supports cholesterol lowering.",
+        "Blood sugar/weight: slows digestion and supports satiety."
+      ],
+      "recipe": "Cook like rice; add to veggie soup or grain bowls.",
+      "cautions": [
+        "Contains gluten (avoid if gluten-free).",
+        "Increase slowly if bloating-prone."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "Soluble fiber supports blood sugar and cholesterol; helps hunger control.",
+        "refs": ["HARVARD_FIBER"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 9,
+      "name": "Lentils",
+      "subtitle": "protein + fiber",
+      "emoji": "🫘",
+      "symptoms": ["blood_sugar", "weight", "gut", "heart", "fatigue"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber", "budget"],
+      "isPlant": true,
+      "price": 1.89,
+      "unit": "bag",
+      "availability": ["Regular supermarket"],
+      "benefit": "Fiber + protein; excellent for weight and glucose stability.",
+      "impact": [
+        "Weight: high satiety per calorie.",
+        "Blood sugar: slower carbs; steady energy.",
+        "Gut: fiber supports regularity (ramp up slowly)."
+      ],
+      "recipe": "Simmer 15–20 min with garlic + cumin + canned tomatoes.",
+      "cautions": [
+        "If bloating, start with small servings; consider well-cooked lentils.",
+        "Rinse canned lentils to reduce gas triggers."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "Fiber supports hunger and blood sugar control; legumes are core high-fiber foods.",
+        "refs": ["HARVARD_FIBER"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 10,
+      "name": "Chickpeas",
+      "subtitle": "versatile legume",
+      "emoji": "🥣",
+      "symptoms": ["gut", "blood_sugar", "weight", "heart"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber", "budget"],
+      "isPlant": true,
+      "price": 0.99,
+      "unit": "can",
+      "availability": ["Regular supermarket"],
+      "benefit": "Fiber + protein; easy meal base.",
+      "impact": [
+        "Weight: fiber/protein improves satiety.",
+        "Blood sugar: steadier post-meal glucose.",
+        "Gut: supports regularity (increase gradually)."
+      ],
+      "recipe": "Roast 400°F with paprika + olive oil ~20 min for crunchy snack.",
+      "cautions": [
+        "Bloating: rinse well; start small; consider hummus/pressure-cooked options."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "High-fiber foods support hunger and blood sugar control.",
+        "refs": ["HARVARD_FIBER"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 11,
+      "name": "Kale / Collards",
+      "subtitle": "leafy greens",
+      "emoji": "🥬",
+      "symptoms": ["bone_joint", "gut", "heart", "fatigue"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber", "budget"],
+      "isPlant": true,
+      "price": 2.29,
+      "unit": "bunch",
+      "availability": ["Regular supermarket", "Farmers market"],
+      "benefit": "Fiber + vitamin K; supports bone-friendly eating patterns.",
+      "impact": [
+        "Bones: supports vitamin K intake (consistency matters with warfarin).",
+        "Gut/heart: fiber-rich vegetable."
+      ],
+      "recipe": "Massage with olive oil + lemon; sauté with garlic.",
+      "cautions": [
+        "If on warfarin: keep vitamin K intake consistent (don't suddenly change huge amounts)."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "Vitamin K is important for clotting and bones; consistency is key with warfarin.",
+        "refs": ["NIH_ODS_VITK"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 12,
+      "name": "Spinach",
+      "subtitle": "leafy green",
+      "emoji": "🥗",
+      "symptoms": ["bone_joint", "fatigue", "gut"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber", "budget"],
+      "isPlant": true,
+      "price": 2.99,
+      "unit": "bag",
+      "availability": ["Regular supermarket", "Farmers market"],
+      "benefit": "Nutrient-dense leafy green; easy add to meals.",
+      "impact": [
+        "Bones/gut: part of high-veg, high-fiber pattern.",
+        "Fatigue: micronutrient support."
+      ],
+      "recipe": "Add to omelets, soups, or quick sauté with garlic + lemon.",
+      "cautions": [
+        "Kidney stones (calcium oxalate): spinach is very high oxalate. Discuss limits and pair with calcium-containing foods.",
+        "Warfarin: keep vitamin K intake consistent."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "NKF/NIDDK highlight spinach as very high oxalate; calcium-with-meals can reduce oxalate absorption.",
+        "refs": ["NKF_CALCIUM_OXALATE", "NIDDK_STONES", "NIH_ODS_VITK"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 13,
+      "name": "Broccoli",
+      "subtitle": "cruciferous",
+      "emoji": "🥦",
+      "symptoms": ["bone_joint", "heart", "gut", "blood_sugar"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber", "budget"],
+      "isPlant": true,
+      "price": 1.89,
+      "unit": "head",
+      "availability": ["Regular supermarket", "Farmers market"],
+      "benefit": "High fiber vegetable; great for bowls and stir-fries.",
+      "impact": [
+        "Gut/weight: fiber supports fullness and regularity.",
+        "Heart: supports plant-forward dietary pattern."
+      ],
+      "recipe": "Roast 425°F 18 min with olive oil + garlic + lemon.",
+      "cautions": [
+        "If bloating/IBS, start with smaller servings or cook thoroughly."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "Fiber supports hunger/blood sugar control and gut regularity.",
+        "refs": ["HARVARD_FIBER"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 14,
+      "name": "Sweet Potato",
+      "subtitle": "prebiotic fiber",
+      "emoji": "🍠",
+      "symptoms": ["gut", "bloating", "weight", "blood_sugar", "fatigue"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber", "budget"],
+      "isPlant": true,
+      "price": 1.29,
+      "unit": "each",
+      "availability": ["Regular supermarket", "Farmers market"],
+      "benefit": "Fiber-rich carb; easier on blood sugar than refined grains.",
+      "impact": [
+        "Weight/blood sugar: fiber helps fullness and steadier energy.",
+        "Gut: supports regularity (ramp gradually)."
+      ],
+      "recipe": "Microwave 6–8 min; top with cinnamon + Greek yogurt or tahini.",
+      "cautions": [
+        "Kidney stones: some guidance lists sweet potato as higher oxalate. Discuss portions."
+      ],
+      "evidence": {
+        "level": "Moderate",
+        "summary": "For stone formers, oxalate management + adequate dietary calcium are key concepts.",
+        "refs": ["NKF_CALCIUM_OXALATE", "NIDDK_STONES"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 15,
+      "name": "Banana",
+      "subtitle": "gentle fruit",
+      "emoji": "🍌",
+      "symptoms": ["gut", "bloating", "fatigue", "stress"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "budget", "low_fodmap"],
+      "isPlant": true,
+      "price": 0.29,
+      "unit": "each",
+      "availability": ["Regular supermarket"],
+      "benefit": "Gentle fruit; convenient snack; often well-tolerated.",
+      "impact": [
+        "Bloating: often easier than many fruits; good starter fiber.",
+        "Energy: quick + steady when paired with nuts/yogurt."
+      ],
+      "recipe": "Banana + peanut butter or banana in oats/smoothies.",
+      "cautions": [
+        "If very sensitive to FODMAPs, ripeness matters (some prefer less ripe)."
+      ],
+      "evidence": {
+        "level": "Moderate",
+        "summary": "A practical, gentle way to increase fiber intake gradually.",
+        "refs": ["HARVARD_FIBER"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 16,
+      "name": "Berries",
+      "subtitle": "frozen or fresh",
+      "emoji": "🫐",
+      "symptoms": ["heart", "brain_fog", "mood", "blood_sugar", "gut", "fatigue"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber"],
+      "isPlant": true,
+      "price": 3.99,
+      "unit": "frozen bag",
+      "availability": ["Regular supermarket", "Farmers market (seasonal)"],
+      "benefit": "High polyphenols + fiber; low glycemic fruit choice.",
+      "impact": [
+        "Blood sugar: fiber helps reduce spikes vs juice/sweets.",
+        "Brain/mood: antioxidant-rich pattern support."
+      ],
+      "recipe": "Thaw slightly → 'sorbet'; or stir into yogurt/oats.",
+      "cautions": [
+        "If on very strict low-carb plans, portion accordingly."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "Fiber supports hunger and blood sugar control; fruit/veg fiber benefits overall health.",
+        "refs": ["HARVARD_FIBER"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 17,
+      "name": "Tomatoes",
+      "subtitle": "flavonoid-rich",
+      "emoji": "🍅",
+      "symptoms": ["heart", "brain_fog", "fatigue"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "budget", "low_fodmap"],
+      "isPlant": true,
+      "price": 0.99,
+      "unit": "each",
+      "availability": ["Regular supermarket", "Farmers market (seasonal)"],
+      "benefit": "Flavonoid-rich produce; easy base for meals.",
+      "impact": [
+        "Heart: supports Mediterranean-style meals.",
+        "Energy: micronutrients and hydration support."
+      ],
+      "recipe": "Quick tomato + olive oil + basil + mozzarella (or tofu feta).",
+      "cautions": [
+        "If reflux, acidic foods can trigger symptoms in some."
+      ],
+      "evidence": {
+        "level": "Moderate",
+        "summary": "Mediterranean-style patterns support cardiometabolic health.",
+        "refs": ["MAYO_MEDITERRANEAN"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 18,
+      "name": "Ginger",
+      "subtitle": "digestive comfort",
+      "emoji": "🫚",
+      "symptoms": ["bloating", "gut", "stress", "nausea"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "budget", "low_fodmap"],
+      "isPlant": true,
+      "price": 0.79,
+      "unit": "knob",
+      "availability": ["Regular supermarket", "Asian market"],
+      "benefit": "Digestive comfort flavor; good swap for sugary sauces.",
+      "impact": [
+        "Bloating: ginger tea can be soothing after meals.",
+        "Stress: warm tea ritual can support calm routines."
+      ],
+      "recipe": "Slice into hot water + lemon; or add to stir-fry.",
+      "cautions": [
+        "If on blood thinners or with bleeding risk, ask clinician about very large supplemental intakes."
+      ],
+      "evidence": {
+        "level": "Emerging",
+        "summary": "Traditional GI comfort food; direct menopause symptom trials limited.",
+        "refs": ["HARVARD_FIBER"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 19,
+      "name": "Turmeric",
+      "subtitle": "anti-inflammatory spice",
+      "emoji": "🟠",
+      "symptoms": ["bone_joint", "stress", "mood"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "budget", "low_fodmap"],
+      "isPlant": true,
+      "price": 2.49,
+      "unit": "jar (spice)",
+      "availability": ["Regular supermarket", "Indian market"],
+      "benefit": "Flavorful spice; supports lower-sugar cooking.",
+      "impact": [
+        "Joint comfort: culinary turmeric is a reasonable add-in.",
+        "Stress: warm spice blends help make healthy meals satisfying."
+      ],
+      "recipe": "Tofu scramble: turmeric + black pepper + onions + spinach.",
+      "cautions": [
+        "Kidney stones: NKF cautions some turmeric supplements can be high oxalate—culinary amounts usually fine."
+      ],
+      "evidence": {
+        "level": "Moderate",
+        "summary": "Stone guidance emphasizes caution with high-oxalate supplements; focus on whole-food patterns.",
+        "refs": ["NKF_CALCIUM_OXALATE"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 20,
+      "name": "Green Tea",
+      "subtitle": "polyphenols",
+      "emoji": "🍵",
+      "symptoms": ["brain_fog", "heart", "stress"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "budget", "low_fodmap"],
+      "isPlant": true,
+      "price": 3.49,
+      "unit": "box",
+      "availability": ["Regular supermarket"],
+      "benefit": "Polyphenols; lower-caffeine alternative to coffee for some.",
+      "impact": [
+        "Stress/brain: warm ritual; gentler stimulant than many coffees.",
+        "Heart: fits Mediterranean-style beverage pattern."
+      ],
+      "recipe": "Brew 2–3 min; try iced green tea with lemon.",
+      "cautions": [
+        "Caffeine sensitivity: choose decaf or limit after noon if sleep issues."
+      ],
+      "evidence": {
+        "level": "Moderate",
+        "summary": "Pattern-based evidence favors plant-forward, lower-added-sugar choices.",
+        "refs": ["MAYO_MEDITERRANEAN"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 21,
+      "name": "Peppermint Tea",
+      "subtitle": "cooling + digestive",
+      "emoji": "🍃",
+      "symptoms": ["bloating", "gut", "hot_flashes"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "budget", "low_fodmap"],
+      "isPlant": true,
+      "price": 3.49,
+      "unit": "box",
+      "availability": ["Regular supermarket"],
+      "benefit": "Cooling tea; digestive comfort for some.",
+      "impact": [
+        "Bloating: warm tea after meals can help comfort.",
+        "Hot flashes: cold peppermint tea can feel cooling."
+      ],
+      "recipe": "Brew strong and pour over ice; add cucumber slices.",
+      "cautions": [
+        "May worsen reflux/GERD in some people—skip if heartburn flares."
+      ],
+      "evidence": {
+        "level": "Emerging",
+        "summary": "Symptom comfort strategy; individualized response.",
+        "refs": ["HARVARD_FIBER"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 22,
+      "name": "Tart Cherry Juice",
+      "subtitle": "sleep support",
+      "emoji": "🍒",
+      "symptoms": ["sleep", "stress", "bone_joint"],
+      "tags": ["plant_only", "gluten_free", "dairy_free"],
+      "isPlant": true,
+      "price": 6.99,
+      "unit": "bottle",
+      "availability": ["Regular supermarket", "Natural foods store"],
+      "benefit": "Sleep routine support; can be helpful for some.",
+      "impact": [
+        "Sleep: small serving as part of consistent bedtime routine.",
+        "Recovery: fits anti-inflammatory dietary pattern."
+      ],
+      "recipe": "Mix 2–4 oz with sparkling water; drink 1–2h before bed.",
+      "cautions": [
+        "Sugar content varies; choose unsweetened if blood sugar/weight is primary."
+      ],
+      "evidence": {
+        "level": "Emerging",
+        "summary": "Sleep effects vary; prioritize overall sleep hygiene and low added sugar.",
+        "refs": ["HARVARD_FIBER"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 23,
+      "name": "Salmon",
+      "subtitle": "omega-3 + vitamin D",
+      "emoji": "🐟",
+      "symptoms": ["bone_joint", "fatigue", "mood", "heart", "brain_fog"],
+      "tags": ["gluten_free", "dairy_free"],
+      "isPlant": false,
+      "price": 12.99,
+      "unit": "per lb",
+      "availability": ["Regular supermarket", "Fish market"],
+      "benefit": "Omega-3s + vitamin D supports bone and heart patterns.",
+      "impact": [
+        "Bone: provides vitamin D; helps calcium use in the body.",
+        "Heart: omega-3 rich protein; Mediterranean-style weekly staple.",
+        "Mood/brain: omega-3 intake supports overall brain health patterns."
+      ],
+      "recipe": "Air fry 400°F 10–12 min with lemon + dill + olive oil.",
+      "cautions": [
+        "Seafood allergy → avoid.",
+        "Choose lower-mercury options; vary fish sources."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "Vitamin D is naturally found in fatty fish; Mediterranean patterns support heart health.",
+        "refs": ["NIH_ODS_VITD", "DGA_VITD_FOODS", "MAYO_MEDITERRANEAN"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 24,
+      "name": "Sardines",
+      "subtitle": "budget omega-3",
+      "emoji": "🐟",
+      "symptoms": ["bone_joint", "heart", "fatigue", "weight"],
+      "tags": ["gluten_free", "dairy_free", "budget"],
+      "isPlant": false,
+      "price": 2.29,
+      "unit": "can",
+      "availability": ["Regular supermarket"],
+      "benefit": "Budget-friendly omega-3 + vitamin D option.",
+      "impact": [
+        "Bone: vitamin D food source; pairs well with calcium-rich foods.",
+        "Heart: omega-3 rich; good protein-to-calorie ratio."
+      ],
+      "recipe": "Mash with lemon + mustard; eat on whole-grain toast or salad.",
+      "cautions": [
+        "Sodium varies—choose low-sodium if bloating/water retention.",
+        "Fish allergy → avoid."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "Vitamin D food sources include fish; Mediterranean pattern supports heart/metabolic health.",
+        "refs": ["NIH_ODS_VITD", "DGA_VITD_FOODS", "MAYO_MEDITERRANEAN"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 25,
+      "name": "Eggs",
+      "subtitle": "vitamin D + protein",
+      "emoji": "🥚",
+      "symptoms": ["fatigue", "bone_joint", "weight", "brain_fog"],
+      "tags": ["gluten_free", "budget"],
+      "isPlant": false,
+      "price": 3.49,
+      "unit": "dozen",
+      "availability": ["Regular supermarket", "Farmers market"],
+      "benefit": "Convenient protein; egg yolk provides small vitamin D amounts.",
+      "impact": [
+        "Weight: protein breakfast helps satiety.",
+        "Bone: contributes vitamin D intake in a mixed diet."
+      ],
+      "recipe": "2-egg omelet with spinach/kale + tomatoes; add feta or tofu crumble.",
+      "cautions": [
+        "If LDL is a major issue, discuss egg frequency with your clinician."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "Egg yolks contain small amounts of vitamin D; food sources can help meet needs.",
+        "refs": ["NIH_ODS_VITD"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 26,
+      "name": "UV-exposed Mushrooms",
+      "subtitle": "vitamin D",
+      "emoji": "🍄",
+      "symptoms": ["bone_joint", "fatigue", "mood"],
+      "tags": ["plant_only", "gluten_free", "dairy_free", "budget", "low_fodmap"],
+      "isPlant": true,
+      "price": 2.49,
+      "unit": "pack",
+      "availability": ["Regular supermarket", "Farmers market"],
+      "benefit": "Some mushrooms provide vitamin D (varies by exposure).",
+      "impact": [
+        "Bone: can contribute vitamin D intake.",
+        "Energy: low-calorie, meal-bulking vegetable."
+      ],
+      "recipe": "Sauté with garlic + thyme; add to eggs or tofu scramble.",
+      "cautions": [
+        "Vitamin D content varies by exposure/labeling; check packaging."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "NIH notes some mushrooms provide vitamin D in variable amounts.",
+        "refs": ["NIH_ODS_VITD"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 27,
+      "name": "Fortified Soy/Oat Milk",
+      "subtitle": "calcium + vitamin D",
+      "emoji": "🥛",
+      "symptoms": ["bone_joint", "weight", "blood_sugar", "hot_flashes"],
+      "tags": ["plant_only", "dairy_free"],
+      "isPlant": true,
+      "price": 3.99,
+      "unit": "carton",
+      "availability": ["Regular supermarket"],
+      "benefit": "Often fortified with vitamin D and calcium; soy adds protein/isoflavones.",
+      "impact": [
+        "Bone: fortified calcium + vitamin D helps dietary adequacy.",
+        "Hot flashes: soy milk adds whole-soy isoflavones."
+      ],
+      "recipe": "Use in oats, smoothies, chia pudding, or coffee substitute.",
+      "cautions": [
+        "Choose unsweetened to reduce weight/blood sugar impact.",
+        "Soy allergy → choose oat/almond; note almond is higher oxalate."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "Vitamin D can be difficult to obtain from natural foods; fortified foods are commonly recommended.",
+        "refs": ["NIH_ODS_VITD", "DGA_VITD_FOODS"]
+      }
+    },
+    {
+      "type": "do",
+      "id": 28,
+      "name": "Natto",
+      "subtitle": "vitamin K2 powerhouse",
+      "emoji": "🫘",
+      "symptoms": ["bone_joint", "heart"],
+      "tags": ["plant_only", "gluten_free", "dairy_free"],
+      "isPlant": true,
+      "price": 4.99,
+      "unit": "3-pack (frozen)",
+      "availability": ["Asian market", "Specialty/online"],
+      "benefit": "Very high vitamin K2 (MK-7). Evidence for vascular markers; bone outcomes mixed.",
+      "impact": [
+        "Bone: vitamin K supports bone-related proteins, but trial results for BMD are mixed.",
+        "Heart: MK-7 supplementation trials show arterial stiffness improvements in some settings."
+      ],
+      "recipe": "Traditional: thaw, mix with mustard/scallion, serve over rice.",
+      "cautions": [
+        "Warfarin users: DO NOT change vitamin K/K2 intake without medical guidance.",
+        "Strong flavor/texture—start small."
+      ],
+      "evidence": {
+        "level": "Mixed",
+        "summary": "Long-term MK-7 RCTs show mixed results for BMD but improvement in arterial stiffness.",
+        "refs": ["PUBMED_MK7_STIFFNESS", "PUBMED_MK7_BMD", "NIH_ODS_VITK"]
+      }
+    },
+    {
+      "type": "dont",
+      "id": 101,
+      "name": "Alcohol",
+      "subtitle": "hot flash trigger",
+      "emoji": "🍷",
+      "symptoms": ["hot_flashes", "sleep", "mood", "weight", "blood_sugar"],
+      "tags": ["gluten_free", "dairy_free"],
+      "isPlant": true,
+      "price": 0,
+      "unit": "limit/avoid",
+      "availability": ["Regular supermarket", "Restaurants/bars"],
+      "benefit": "Common trigger for hot flashes + sleep disruption; increases calories quickly.",
+      "impact": [
+        "Hot flashes: can trigger or worsen for many.",
+        "Sleep: can fragment sleep even if it makes you sleepy at first.",
+        "Weight/mood: adds calories and can worsen anxiety/depressed mood."
+      ],
+      "recipe": "Swap: sparkling water + lime + bitters (non-alcoholic) or hop water.",
+      "swap": "Sparkling water + citrus + mint; or alcohol-free mocktail.",
+      "cautions": [
+        "If you drink, keep it earlier in the day and with food; watch symptom response."
+      ],
+      "evidence": {
+        "level": "Moderate",
+        "summary": "Clinical guidance commonly lists alcohol as a hot-flash and sleep trigger.",
+        "refs": ["MAYO_MEDITERRANEAN"]
+      }
+    },
+    {
+      "type": "dont",
+      "id": 102,
+      "name": "High Caffeine (late day)",
+      "subtitle": "sleep disruptor",
+      "emoji": "☕",
+      "symptoms": ["sleep", "hot_flashes", "stress", "mood"],
+      "tags": ["gluten_free", "dairy_free"],
+      "isPlant": true,
+      "price": 0,
+      "unit": "limit after noon",
+      "availability": ["Coffee shops", "Supermarket"],
+      "benefit": "Can worsen sleep/anxiety and may amplify hot flashes in some.",
+      "impact": [
+        "Sleep: delays onset and reduces depth for many people.",
+        "Stress: can increase jitteriness/palpitations.",
+        "Hot flashes: may be a trigger for some."
+      ],
+      "recipe": "Swap: decaf coffee, herbal tea, or half-caff in the morning only.",
+      "swap": "Half-caff AM; switch to herbal tea after noon.",
+      "cautions": [
+        "If you're exhausted, consider improving sleep routine before increasing caffeine."
+      ],
+      "evidence": {
+        "level": "Emerging",
+        "summary": "Trigger patterns are individualized; the sleep tradeoff is often the key issue.",
+        "refs": ["HARVARD_FIBER"]
+      }
+    },
+    {
+      "type": "dont",
+      "id": 103,
+      "name": "Spicy Foods",
+      "subtitle": "if you flare",
+      "emoji": "🌶️",
+      "symptoms": ["hot_flashes", "gut", "bloating", "sleep"],
+      "tags": ["plant_only", "gluten_free", "dairy_free"],
+      "isPlant": true,
+      "price": 0,
+      "unit": "personal trigger",
+      "availability": ["Regular supermarket", "Restaurants"],
+      "benefit": "Common hot-flash/GERD trigger for some; not universal.",
+      "impact": [
+        "Hot flashes: can trigger in some people.",
+        "Gut: can worsen reflux/IBS in some."
+      ],
+      "recipe": "Swap: flavor with herbs (basil, dill), citrus, ginger, smoked paprika.",
+      "swap": "Citrus + herbs + ginger instead of chili heat.",
+      "cautions": [
+        "Not a must-avoid—use your symptom pattern as the guide."
+      ],
+      "evidence": {
+        "level": "Emerging",
+        "summary": "Trigger foods vary; using a personal trigger watchlist is often most effective.",
+        "refs": ["HARVARD_FIBER"]
+      }
+    },
+    {
+      "type": "dont",
+      "id": 104,
+      "name": "Sugary Drinks",
+      "subtitle": "soda/juice",
+      "emoji": "🥤",
+      "symptoms": ["weight", "blood_sugar", "bloating", "mood"],
+      "tags": ["plant_only", "gluten_free", "dairy_free"],
+      "isPlant": true,
+      "price": 0,
+      "unit": "avoid",
+      "availability": ["Regular supermarket"],
+      "benefit": "Fast sugar spike + low satiety → cravings and weight drift.",
+      "impact": [
+        "Blood sugar: spikes and crashes can worsen fatigue/cravings.",
+        "Weight: adds calories without fullness.",
+        "Bloating: carbonation can worsen gas."
+      ],
+      "recipe": "Swap: sparkling water + lemon; iced tea (unsweetened).",
+      "swap": "Bubbly water + citrus + berries.",
+      "cautions": [
+        "If using juice medically (hypoglycemia), follow your plan."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "Fiber-rich whole foods help keep hunger and blood sugar in check; sugar beverages do the opposite.",
+        "refs": ["HARVARD_FIBER"]
+      }
+    },
+    {
+      "type": "dont",
+      "id": 105,
+      "name": "Ultra-processed Salty Snacks",
+      "subtitle": "chips/crackers",
+      "emoji": "🧂",
+      "symptoms": ["bloating", "weight", "heart", "sleep"],
+      "tags": ["gluten_free", "dairy_free"],
+      "isPlant": false,
+      "price": 0,
+      "unit": "limit",
+      "availability": ["Regular supermarket", "Convenience stores"],
+      "benefit": "High sodium → water retention/bloating; low fiber; easy to overeat.",
+      "impact": [
+        "Bloating/water retention: sodium can worsen swelling and discomfort.",
+        "Weight: hyper-palatable foods increase intake."
+      ],
+      "recipe": "Swap: popcorn (light salt), roasted chickpeas, nuts + fruit.",
+      "swap": "Roasted chickpeas or air-popped popcorn.",
+      "cautions": [
+        "If hypertension/edema, sodium reduction is especially helpful."
+      ],
+      "evidence": {
+        "level": "Moderate",
+        "summary": "Kidney stone guidance highlights sodium as a major driver of urinary calcium and risk.",
+        "refs": ["NKF_STONE_PREVENTION"]
+      }
+    },
+    {
+      "type": "dont",
+      "id": 106,
+      "name": "Refined Carbs",
+      "subtitle": "pastries/white bread",
+      "emoji": "🥐",
+      "symptoms": ["blood_sugar", "weight", "fatigue", "mood"],
+      "tags": ["dairy_free"],
+      "isPlant": true,
+      "price": 0,
+      "unit": "limit",
+      "availability": ["Regular supermarket", "Bakeries"],
+      "benefit": "Low fiber → hunger rebound; worsens cravings for many.",
+      "impact": [
+        "Blood sugar: spikes and crashes can worsen fatigue/cravings.",
+        "Weight: low satiety per calorie."
+      ],
+      "recipe": "Swap: oats, whole grains, lentil pasta, or add protein/fiber to the meal.",
+      "swap": "Oatmeal/berries or whole-grain + protein.",
+      "cautions": [
+        "If you love bread, choose higher-fiber versions and pair with protein."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "Fiber helps regulate hunger and blood sugar—refined carbs remove that advantage.",
+        "refs": ["HARVARD_FIBER"]
+      }
+    },
+    {
+      "type": "dont",
+      "id": 107,
+      "name": "Carbonated Beverages",
+      "subtitle": "if bloating",
+      "emoji": "🫧",
+      "symptoms": ["bloating", "gut"],
+      "tags": ["plant_only", "gluten_free", "dairy_free"],
+      "isPlant": true,
+      "price": 0,
+      "unit": "personal trigger",
+      "availability": ["Regular supermarket"],
+      "benefit": "Gas load can worsen bloating.",
+      "impact": [
+        "Bloating: can increase gas and discomfort."
+      ],
+      "recipe": "Swap: still water with citrus; herbal teas.",
+      "swap": "Still water + lemon/ginger.",
+      "cautions": [
+        "Some people tolerate small amounts fine—use your pattern."
+      ],
+      "evidence": {
+        "level": "Emerging",
+        "summary": "Bloating triggers vary; simplest experiment is a 1–2 week removal trial.",
+        "refs": ["HARVARD_FIBER"]
+      }
+    }
+  ]
+}
