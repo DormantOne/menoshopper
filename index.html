@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MenoShopper</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sage: #4a7c59;
+      --sage-light: #e8f0ea;
+      --sage-dark: #3d6549;
+      --coral: #d4726a;
+      --coral-light: #fdf2f1;
+      --warm: #f9f7f4;
+      --text: #2d3436;
+      --text-light: #636e72;
+      --text-muted: #9ca3af;
+      --white: #ffffff;
+      --border: #e5e7eb;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
+      --shadow: 0 4px 12px rgba(0,0,0,0.06);
+      --radius: 12px;
+      --radius-lg: 16px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--warm);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+      padding-bottom: 100px;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--sage);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn-text {
+      background: none;
+      border: none;
+      color: var(--text-light);
+      font-size: 0.9rem;
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+
+    .btn-text:hover { background: var(--sage-light); color: var(--sage); }
+
+    /* ===== MAIN LAYOUT ===== */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* ===== INTRO CARD ===== */
+    .intro-card {
+      background: linear-gradient(135deg, var(--sage) 0%, var(--sage-dark) 100%);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 24px;
+      color: var(--white);
+    }
+
+    .intro-card h2 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    .intro-card p {
+      opacity: 0.9;
+      font-size: 0.95rem;
+      max-width: 700px;
+    }
+
+    .intro-tips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .tip-badge {
+      background: rgba(255,255,255,0.15);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      backdrop-filter: blur(4px);
+    }
+
+    .intro-toggle {
+      background: rgba(255,255,255,0.2);
+      border: none;
+      color: var(--white);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      margin-top: 16px;
+    }
+
+    .intro-expanded {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      display: none;
+    }
+
+    .intro-expanded.show { display: block; }
+
+    .intro-expanded h3 {
+      font-size: 1rem;
+      margin: 12px 0 8px 0;
+      opacity: 0.95;
+    }
+
+    .intro-expanded ul {
+      margin-left: 20px;
+      opacity: 0.9;
+      font-size: 0.9rem;
+    }
+
+    .intro-expanded li { margin: 4px 0; }
+
+    /* ===== TAB NAV ===== */
+    .tab-nav {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      background: var(--white);
+      padding: 6px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .tab {
+      flex: 1;
+      padding: 12px 16px;
+      border: none;
+      background: transparent;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-light);
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .tab:hover { background: var(--sage-light); }
+    .tab.active { background: var(--sage); color: var(--white); }
+    .tab.active.dont { background: var(--coral); }
+
+    .tab-badge {
+      background: rgba(255,255,255,0.3);
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 0.8rem;
+    }
+
+    /* ===== FILTERS ===== */
+    .filters-bar {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 16px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .search-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .search-input {
+      flex: 1;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-input:focus { border-color: var(--sage); }
+
+    .filter-section {
+      margin-bottom: 12px;
+    }
+
+    .filter-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+
+    .filter-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .filter-pill {
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      background: var(--white);
+      user-select: none;
+    }
+
+    .filter-pill:hover { border-color: var(--sage); }
+    .filter-pill.active {
+      background: var(--sage-light);
+      border-color: var(--sage);
+      color: var(--sage-dark);
+      font-weight: 500;
+    }
+
+    .clear-filters {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      text-decoration: underline;
+      cursor: pointer;
+      margin-left: auto;
+    }
+
+    /* ===== PRODUCT GRID ===== */
+    .product-grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    }
+
+    /* ===== FOOD CARD ===== */
+    .food-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.2s;
+    }
+
+    .food-card:hover { box-shadow: var(--shadow); }
+
+    .card-header {
+      padding: 20px 20px 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .card-title-area {
+      flex: 1;
+    }
+
+    .card-emoji {
+      font-size: 1.5rem;
+      margin-bottom: 4px;
+    }
+
+    .card-name {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .card-subtitle {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin-top: 2px;
+    }
+
+    .card-type-badge {
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+
+    .card-type-badge.do {
+      background: var(--sage-light);
+      color: var(--sage-dark);
+    }
+
+    .card-type-badge.dont {
+      background: var(--coral-light);
+      color: var(--coral);
+    }
+
+    .card-body {
+      padding: 0 20px 16px 20px;
+    }
+
+    .card-benefit {
+      font-size: 0.95rem;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .meta-tag {
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      border-radius: 4px;
+      background: #f3f4f6;
+      color: var(--text-light);
+    }
+
+    .meta-tag.evidence {
+      background: #eff6ff;
+      color: #1d4ed8;
+    }
+
+    .meta-tag.price {
+      background: var(--sage-light);
+      color: var(--sage-dark);
+    }
+
+    /* Expandable details */
+    .card-details {
+      border-top: 1px solid var(--border);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+
+    .card-details.open { max-height: 600px; }
+
+    .details-inner {
+      padding: 16px 20px;
+    }
+
+    .detail-section {
+      margin-bottom: 14px;
+    }
+
+    .detail-section:last-child { margin-bottom: 0; }
+
+    .detail-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--sage-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 6px;
+    }
+
+    .detail-content {
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+
+    .detail-content ul {
+      margin: 4px 0 0 16px;
+      color: var(--text-light);
+    }
+
+    .detail-content li { margin: 4px 0; }
+
+    .detail-content a {
+      color: var(--sage);
+      text-decoration: underline;
+    }
+
+    .swap-highlight {
+      background: #faf5ff;
+      border-left: 3px solid #9333ea;
+      padding: 10px 12px;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.9rem;
+    }
+
+    .caution-box {
+      background: #fffbeb;
+      border-left: 3px solid #f59e0b;
+      padding: 10px 12px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .caution-box ul {
+      margin: 0 0 0 16px;
+      color: #92400e;
+    }
+
+    /* Card footer */
+    .card-footer {
+      padding: 12px 20px 16px 20px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: none;
+      text-align: center;
+    }
+
+    .btn-secondary {
+      background: #f3f4f6;
+      color: var(--text);
+    }
+
+    .btn-secondary:hover { background: #e5e7eb; }
+
+    .btn-primary {
+      background: var(--sage);
+      color: var(--white);
+    }
+
+    .btn-primary:hover { background: var(--sage-dark); }
+
+    .btn-primary.added {
+      background: var(--sage-dark);
+    }
+
+    .btn-warn {
+      background: var(--coral-light);
+      color: var(--coral);
+    }
+
+    .btn-warn:hover { background: #fce7e5; }
+
+    .btn-warn.added {
+      background: var(--coral);
+      color: var(--white);
+    }
+
+    /* ===== MY LIST VIEW ===== */
+    .list-view {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+
+    .list-header {
+      padding: 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .list-header h2 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.2rem;
+    }
+
+    .list-total {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--sage);
+    }
+
+    .list-section {
+      padding: 12px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .list-section-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-badge {
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+    }
+
+    .section-badge.do { background: var(--sage-light); color: var(--sage-dark); }
+    .section-badge.dont { background: var(--coral-light); color: var(--coral); }
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+      gap: 12px;
+      border-bottom: 1px solid #f3f4f6;
+    }
+
+    .list-item:last-child { border-bottom: none; }
+
+    .list-check {
+      width: 20px;
+      height: 20px;
+      accent-color: var(--sage);
+    }
+
+    .list-item-info { flex: 1; }
+
+    .list-item-name {
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .list-item-name.checked {
+      text-decoration: line-through;
+      color: var(--text-muted);
+    }
+
+    .list-item-meta {
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    .list-item-remove {
+      width: 32px;
+      height: 32px;
+      border: none;
+      background: #f3f4f6;
+      border-radius: 6px;
+      cursor: pointer;
+      color: var(--text-light);
+      font-size: 1.1rem;
+      transition: all 0.2s;
+    }
+
+    .list-item-remove:hover {
+      background: var(--coral-light);
+      color: var(--coral);
+    }
+
+    .list-actions {
+      padding: 20px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-light);
+    }
+
+    .empty-state h3 {
+      font-family: 'Fraunces', Georgia, serif;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    /* ===== MODAL ===== */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 500;
+      padding: 20px;
+      backdrop-filter: blur(2px);
+    }
+
+    .modal-backdrop.show { display: flex; }
+
+    .modal {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      max-width: 700px;
+      width: 100%;
+      max-height: 85vh;
+      overflow: auto;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    }
+
+    .modal-header {
+      padding: 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      background: var(--white);
+    }
+
+    .modal-title {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.2rem;
+    }
+
+    .modal-close {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--border);
+      background: var(--white);
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: var(--text-light);
+    }
+
+    .modal-content { padding: 20px; }
+
+    .ref-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+
+    .ref-title {
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .ref-link {
+      font-size: 0.85rem;
+      color: var(--sage);
+    }
+
+    /* ===== BOTTOM BAR ===== */
+    .bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      padding: 12px 20px;
+      z-index: 200;
+      box-shadow: 0 -4px 12px rgba(0,0,0,0.05);
+    }
+
+    .bottom-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cart-info { flex: 1; }
+
+    .cart-total {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.3rem;
+      color: var(--sage);
+    }
+
+    .cart-count {
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    .btn-view-list {
+      padding: 12px 24px;
+      background: var(--sage);
+      color: var(--white);
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+
+    .btn-view-list:hover { background: var(--sage-dark); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tab { padding: 10px 8px; font-size: 0.85rem; }
+
+      .intro-card { padding: 20px; }
+
+      .header-actions { gap: 8px; }
+
+      .filter-pills { gap: 6px; }
+
+      .filter-pill { padding: 6px 10px; font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span>🥗</span>
+        <span>MenoShopper</span>
+      </div>
+      <div class="header-actions">
+        <button class="btn-text" onclick="openEvidenceModal()">📚 Sources</button>
+        <button class="btn-text" onclick="clearCart()">Clear All</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Intro Card -->
+    <div class="intro-card">
+      <h2>Your menopause-friendly grocery guide</h2>
+      <p>Filter by symptoms to find foods that may help—and triggers to watch. This is a decision helper, not medical advice.</p>
+      <div class="intro-tips">
+        <span class="tip-badge">✓ Fiber + protein + plants</span>
+        <span class="tip-badge">⚠ Watch: alcohol, caffeine, spicy</span>
+        <span class="tip-badge">🦴 Bone: calcium + vitamin D</span>
+      </div>
+      <button class="intro-toggle" onclick="toggleIntroExpanded()">Read the full playbook ↓</button>
+      <div class="intro-expanded" id="introExpanded">
+        <h3>Do (most helpful patterns)</h3>
+        <ul>
+          <li><strong>Fiber targets:</strong> aim ~25–35g/day with oats, beans, berries, veggies, seeds</li>
+          <li><strong>Protein + fiber per meal</strong> to reduce "menopause belly" drift</li>
+          <li><strong>Whole soy foods</strong> (tofu/tempeh/edamame) for hot flashes in many studies</li>
+          <li><strong>Omega-3 fish</strong> (salmon/sardines) + olive oil + nuts (Mediterranean pattern)</li>
+          <li><strong>Vitamin D foods</strong> (fatty fish, egg yolk, mushrooms, fortified milks)</li>
+        </ul>
+        <h3>Don't / Limit (common symptom amplifiers)</h3>
+        <ul>
+          <li><strong>Alcohol</strong> (hot flashes, sleep, weight, mood)</li>
+          <li><strong>High caffeine</strong> especially after midday</li>
+          <li><strong>Spicy foods</strong> if they trigger hot flashes/GERD for you</li>
+          <li><strong>Ultra-processed salty/sugary foods</strong></li>
+        </ul>
+        <h3>For bloating/fiber</h3>
+        <ul>
+          <li>Start low and go slow: add 1 high-fiber item every 2–3 days + water</li>
+          <li>Rinse canned beans; start with lentils; try ginger or peppermint tea</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tab Navigation -->
+    <div class="tab-nav">
+      <button class="tab active" id="tab-do" onclick="switchView('do')">
+        ✓ Do Foods
+      </button>
+      <button class="tab dont" id="tab-dont" onclick="switchView('dont')">
+        ⚠ Don't / Limit
+      </button>
+      <button class="tab" id="tab-list" onclick="switchView('list')">
+        📋 My List <span class="tab-badge" id="listCount">0</span>
+      </button>
+    </div>
+
+    <!-- Filters (hidden in list view) -->
+    <div class="filters-bar" id="filtersBar">
+      <div class="search-row">
+        <input 
+          type="text" 
+          class="search-input" 
+          id="searchInput" 
+          placeholder="Search foods..." 
+          oninput="handleSearch(this.value)"
+        />
+        <span class="clear-filters" onclick="clearFilters()">Clear filters</span>
+      </div>
+      
+      <div class="filter-section">
+        <div class="filter-label">Filter by symptom</div>
+        <div class="filter-pills" id="symptomFilters"></div>
+      </div>
+      
+      <div class="filter-section">
+        <div class="filter-label">Preferences</div>
+        <div class="filter-pills" id="prefFilters"></div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="mainContent" class="product-grid"></main>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="bottom-bar">
+    <div class="bottom-inner">
+      <div class="cart-info">
+        <div class="cart-total" id="cartTotal">$0.00</div>
+        <div class="cart-count" id="cartCount">0 items (Do foods only)</div>
+      </div>
+      <button class="btn-view-list" onclick="switchView('list')">View List</button>
+    </div>
+  </div>
+
+  <!-- Evidence Modal -->
+  <div class="modal-backdrop" id="evidenceModal" onclick="closeModal(event)">
+    <div class="modal" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div class="modal-title">📚 Evidence Sources</div>
+        <button class="modal-close" onclick="closeEvidenceModal()">×</button>
+      </div>
+      <div class="modal-content" id="evidenceContent"></div>
+    </div>
+  </div>
+
+  <script>
+    // ============================================================
+    // STATE
+    // ============================================================
+    let data = null;
+    let activeSymptoms = new Set();
+    let activePrefs = new Set();
+    let searchTerm = '';
+    let currentView = 'do'; // 'do' | 'dont' | 'list'
+    let cart = new Set(); // keys like "do:1" or "dont:101"
+    let expandedCards = new Set();
+
+    // ============================================================
+    // INITIALIZATION
+    // ============================================================
+    async function init() {
+      try {
+        const response = await fetch('data.json');
+        data = await response.json();
+        renderFilters();
+        render();
+      } catch (error) {
+        console.error('Failed to load data:', error);
+        document.getElementById('mainContent').innerHTML = `
+          <div class="empty-state">
+            <h3>Unable to load data</h3>
+            <p>Please ensure data.json is in the same directory.</p>
+          </div>
+        `;
+      }
+    }
+
+    // ============================================================
+    // FILTERS
+    // ============================================================
+    function renderFilters() {
+      // Symptom filters
+      const symptomContainer = document.getElementById('symptomFilters');
+      symptomContainer.innerHTML = '';
+      for (const [key, val] of Object.entries(data.symptoms)) {
+        const pill = document.createElement('div');
+        pill.className = 'filter-pill';
+        pill.dataset.key = key;
+        pill.textContent = `${val.icon} ${val.label}`;
+        pill.onclick = () => toggleSymptom(key, pill);
+        symptomContainer.appendChild(pill);
+      }
+
+      // Preference filters
+      const prefContainer = document.getElementById('prefFilters');
+      prefContainer.innerHTML = '';
+      for (const [key, val] of Object.entries(data.preferences)) {
+        const pill = document.createElement('div');
+        pill.className = 'filter-pill';
+        pill.dataset.key = key;
+        pill.textContent = `${val.icon} ${val.label}`;
+        pill.onclick = () => togglePref(key, pill);
+        prefContainer.appendChild(pill);
+      }
+    }
+
+    function toggleSymptom(key, el) {
+      if (activeSymptoms.has(key)) {
+        activeSymptoms.delete(key);
+        el.classList.remove('active');
+      } else {
+        activeSymptoms.add(key);
+        el.classList.add('active');
+      }
+      render();
+    }
+
+    function togglePref(key, el) {
+      if (activePrefs.has(key)) {
+        activePrefs.delete(key);
+        el.classList.remove('active');
+      } else {
+        activePrefs.add(key);
+        el.classList.add('active');
+      }
+      render();
+    }
+
+    function handleSearch(value) {
+      searchTerm = value.trim().toLowerCase();
+      render();
+    }
+
+    function clearFilters() {
+      activeSymptoms.clear();
+      activePrefs.clear();
+      searchTerm = '';
+      document.getElementById('searchInput').value = '';
+      document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+      render();
+    }
+
+    // ============================================================
+    // VIEW SWITCHING
+    // ============================================================
+    function switchView(view) {
+      currentView = view;
+      
+      // Update tab styles
+      document.getElementById('tab-do').className = view === 'do' ? 'tab active' : 'tab';
+      document.getElementById('tab-dont').className = view === 'dont' ? 'tab active dont' : 'tab dont';
+      document.getElementById('tab-list').className = view === 'list' ? 'tab active' : 'tab';
+
+      // Show/hide filters
+      document.getElementById('filtersBar').style.display = view === 'list' ? 'none' : 'block';
+
+      render();
+      window.scrollTo(0, 0);
+    }
+
+    // ============================================================
+    // FILTERING LOGIC
+    // ============================================================
+    function filterItems(type) {
+      return data.items.filter(item => {
+        // Type filter
+        if (item.type !== type) return false;
+
+        // Symptom filter
+        if (activeSymptoms.size > 0) {
+          const hasMatch = item.symptoms.some(s => activeSymptoms.has(s));
+          if (!hasMatch) return false;
+        }
+
+        // Preference filters
+        if (activePrefs.has('plant_only') && !item.isPlant) return false;
+        if (activePrefs.has('budget') && item.type === 'do' && item.price > 3.01) return false;
+        
+        const tagPrefs = ['gluten_free', 'dairy_free', 'low_fodmap', 'high_fiber'];
+        for (const p of tagPrefs) {
+          if (activePrefs.has(p) && !item.tags.includes(p)) return false;
+        }
+
+        // Search filter
+        if (searchTerm) {
+          const searchable = `${item.name} ${item.subtitle || ''} ${item.benefit}`.toLowerCase();
+          if (!searchable.includes(searchTerm)) return false;
+        }
+
+        return true;
+      });
+    }
+
+    // ============================================================
+    // CART MANAGEMENT
+    // ============================================================
+    function keyOf(item) {
+      return `${item.type}:${item.id}`;
+    }
+
+    function getItemByKey(key) {
+      const [type, id] = key.split(':');
+      return data.items.find(i => i.type === type && i.id === parseInt(id));
+    }
+
+    function toggleCart(key) {
+      if (cart.has(key)) {
+        cart.delete(key);
+      } else {
+        cart.add(key);
+      }
+      updateCartUI();
+      render();
+    }
+
+    function clearCart() {
+      if (cart.size === 0 || confirm('Clear your entire list?')) {
+        cart.clear();
+        updateCartUI();
+        render();
+      }
+    }
+
+    function updateCartUI() {
+      let total = 0;
+      let doCount = 0;
+      
+      cart.forEach(key => {
+        const item = getItemByKey(key);
+        if (item && item.type === 'do') {
+          total += item.price || 0;
+          doCount++;
+        }
+      });
+
+      document.getElementById('cartTotal').textContent = `$${total.toFixed(2)}`;
+      document.getElementById('cartCount').textContent = `${cart.size} items (${doCount} foods)`;
+      document.getElementById('listCount').textContent = cart.size;
+    }
+
+    // ============================================================
+    // RENDERING
+    // ============================================================
+    function render() {
+      const container = document.getElementById('mainContent');
+
+      if (currentView === 'list') {
+        renderList(container);
+      } else {
+        renderGrid(container, currentView);
+      }
+
+      updateCartUI();
+    }
+
+    function renderGrid(container, type) {
+      container.className = 'product-grid';
+      const items = filterItems(type);
+
+      if (items.length === 0) {
+        container.innerHTML = `
+          <div class="empty-state" style="grid-column: 1 / -1;">
+            <h3>No items match your filters</h3>
+            <p>Try removing some filters or changing your search.</p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = items.map(item => renderCard(item)).join('');
+    }
+
+    function renderCard(item) {
+      const key = keyOf(item);
+      const inCart = cart.has(key);
+      const isExpanded = expandedCards.has(key);
+      const isDont = item.type === 'dont';
+
+      // Build symptom tags (show just first 3)
+      const symptomTags = item.symptoms.slice(0, 3).map(s => {
+        const sym = data.symptoms[s];
+        return `<span class="meta-tag">${sym.icon} ${sym.label}</span>`;
+      }).join('');
+
+      // Evidence tag
+      const evidenceLevel = item.evidence?.level || 'Emerging';
+      const evidenceTag = `<span class="meta-tag evidence">${evidenceLevel} evidence</span>`;
+
+      // Price tag
+      const priceTag = item.type === 'do' 
+        ? `<span class="meta-tag price">$${item.price.toFixed(2)} / ${escapeHtml(item.unit)}</span>`
+        : `<span class="meta-tag">${escapeHtml(item.unit)}</span>`;
+
+      // Build expanded details HTML
+      const impactList = item.impact?.map(i => `<li>${escapeHtml(i)}</li>`).join('') || '';
+      const cautionList = item.cautions?.map(c => `<li>${escapeHtml(c)}</li>`).join('') || '';
+      const refLinks = item.evidence?.refs?.map(ref => {
+        const r = data.references[ref];
+        return r ? `<li><a href="${r.url}" target="_blank">${escapeHtml(r.title)}</a></li>` : '';
+      }).join('') || '';
+
+      return `
+        <div class="food-card">
+          <div class="card-header">
+            <div class="card-title-area">
+              <div class="card-emoji">${item.emoji}</div>
+              <div class="card-name">${escapeHtml(item.name)}</div>
+              <div class="card-subtitle">${escapeHtml(item.subtitle || '')}</div>
+            </div>
+            <span class="card-type-badge ${item.type}">${isDont ? 'Limit' : 'Do'}</span>
+          </div>
+
+          <div class="card-body">
+            <div class="card-benefit">${escapeHtml(item.benefit)}</div>
+            <div class="card-meta">
+              ${evidenceTag}
+              ${priceTag}
+            </div>
+          </div>
+
+          <div class="card-details ${isExpanded ? 'open' : ''}" id="details-${key.replace(':', '-')}">
+            <div class="details-inner">
+              ${item.swap ? `
+                <div class="detail-section">
+                  <div class="swap-highlight">
+                    <strong>💡 Swap idea:</strong> ${escapeHtml(item.swap)}
+                  </div>
+                </div>
+              ` : ''}
+
+              <div class="detail-section">
+                <div class="detail-label">How it helps</div>
+                <div class="detail-content">
+                  <ul>${impactList}</ul>
+                </div>
+              </div>
+
+              <div class="detail-section">
+                <div class="detail-label">${isDont ? 'Better alternative' : 'Quick recipe'}</div>
+                <div class="detail-content">${escapeHtml(item.recipe || '—')}</div>
+              </div>
+
+              ${cautionList ? `
+                <div class="detail-section">
+                  <div class="caution-box">
+                    <strong>⚠️ Cautions</strong>
+                    <ul>${cautionList}</ul>
+                  </div>
+                </div>
+              ` : ''}
+
+              ${refLinks ? `
+                <div class="detail-section">
+                  <div class="detail-label">Sources</div>
+                  <div class="detail-content">
+                    <ul>${refLinks}</ul>
+                  </div>
+                </div>
+              ` : ''}
+
+              <div class="detail-section">
+                <div class="detail-label">Where to find</div>
+                <div class="detail-content">${item.availability?.join(' • ') || 'Various stores'}</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn btn-secondary" onclick="toggleDetails('${key}')">
+              ${isExpanded ? 'Less info' : 'More info'}
+            </button>
+            <button 
+              class="btn ${isDont ? (inCart ? 'btn-warn added' : 'btn-warn') : (inCart ? 'btn-primary added' : 'btn-primary')}" 
+              onclick="toggleCart('${key}')"
+            >
+              ${inCart ? '✓ Added' : (isDont ? '⚠ Watch' : '+ Add')}
+            </button>
+          </div>
+        </div>
+      `;
+    }
+
+    function toggleDetails(key) {
+      if (expandedCards.has(key)) {
+        expandedCards.delete(key);
+      } else {
+        expandedCards.add(key);
+      }
+      render();
+    }
+
+    function renderList(container) {
+      container.className = '';
+
+      if (cart.size === 0) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <h3>Your list is empty</h3>
+            <p>Start by browsing Do Foods to add groceries, or Don't Foods to track triggers.</p>
+            <button class="btn btn-primary" style="margin-top: 16px;" onclick="switchView('do')">
+              Browse Foods
+            </button>
+          </div>
+        `;
+        return;
+      }
+
+      const doItems = [];
+      const dontItems = [];
+
+      cart.forEach(key => {
+        const item = getItemByKey(key);
+        if (item) {
+          if (item.type === 'do') doItems.push({ key, item });
+          else dontItems.push({ key, item });
+        }
+      });
+
+      // Calculate total
+      const total = doItems.reduce((sum, { item }) => sum + (item.price || 0), 0);
+
+      container.innerHTML = `
+        <div class="list-view">
+          <div class="list-header">
+            <h2>My Shopping List</h2>
+            <div class="list-total">$${total.toFixed(2)}</div>
+          </div>
+
+          ${doItems.length > 0 ? `
+            <div class="list-section">
+              <div class="list-section-title">
+                <span class="section-badge do">✓ DO</span>
+                Foods to buy (${doItems.length})
+              </div>
+              ${doItems.map(({ key, item }) => renderListItem(key, item)).join('')}
+            </div>
+          ` : ''}
+
+          ${dontItems.length > 0 ? `
+            <div class="list-section">
+              <div class="list-section-title">
+                <span class="section-badge dont">⚠ WATCH</span>
+                Triggers to avoid (${dontItems.length})
+              </div>
+              ${dontItems.map(({ key, item }) => renderListItem(key, item)).join('')}
+            </div>
+          ` : ''}
+
+          <div class="list-actions">
+            <button class="btn btn-secondary" onclick="copyList()">📋 Copy to clipboard</button>
+            <button class="btn btn-primary" onclick="switchView('do')">+ Add more</button>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderListItem(key, item) {
+      const isDont = item.type === 'dont';
+      const meta = isDont 
+        ? (item.swap ? `Swap: ${item.swap}` : item.unit)
+        : `$${item.price.toFixed(2)} / ${item.unit}`;
+
+      return `
+        <div class="list-item">
+          <input type="checkbox" class="list-check" onchange="this.parentElement.querySelector('.list-item-name').classList.toggle('checked')">
+          <div class="list-item-info">
+            <div class="list-item-name">${item.emoji} ${escapeHtml(item.name)}</div>
+            <div class="list-item-meta">${escapeHtml(meta)}</div>
+          </div>
+          <button class="list-item-remove" onclick="toggleCart('${key}')">×</button>
+        </div>
+      `;
+    }
+
+    function copyList() {
+      const doItems = [];
+      const dontItems = [];
+
+      cart.forEach(key => {
+        const item = getItemByKey(key);
+        if (item) {
+          if (item.type === 'do') doItems.push(item);
+          else dontItems.push(item);
+        }
+      });
+
+      let text = '🥗 MenoShopper List\n\n';
+      
+      if (doItems.length) {
+        text += '✓ DO (buy):\n';
+        doItems.forEach(i => text += `  • ${i.name} (${i.unit})\n`);
+      }
+
+      if (dontItems.length) {
+        text += '\n⚠ WATCH (avoid/limit):\n';
+        dontItems.forEach(i => text += `  • ${i.name}${i.swap ? ` → Try: ${i.swap}` : ''}\n`);
+      }
+
+      navigator.clipboard.writeText(text).then(() => {
+        alert('List copied to clipboard!');
+      });
+    }
+
+    // ============================================================
+    // MODAL
+    // ============================================================
+    function openEvidenceModal() {
+      const content = document.getElementById('evidenceContent');
+      content.innerHTML = `
+        <p style="margin-bottom: 16px; color: var(--text-light);">
+          These are the sources cited in food cards. Click "More info" on any card to see which sources apply.
+        </p>
+        ${Object.entries(data.references).map(([key, ref]) => `
+          <div class="ref-card">
+            <div class="ref-title">${escapeHtml(ref.title)}</div>
+            <a class="ref-link" href="${ref.url}" target="_blank">View source →</a>
+          </div>
+        `).join('')}
+      `;
+      document.getElementById('evidenceModal').classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeEvidenceModal() {
+      document.getElementById('evidenceModal').classList.remove('show');
+      document.body.style.overflow = '';
+    }
+
+    function closeModal(event) {
+      if (event.target === document.getElementById('evidenceModal')) {
+        closeEvidenceModal();
+      }
+    }
+
+    function toggleIntroExpanded() {
+      const el = document.getElementById('introExpanded');
+      el.classList.toggle('show');
+    }
+
+    // ============================================================
+    // UTILITIES
+    // ============================================================
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeEvidenceModal();
+    });
+
+    // Initialize on load
+    init();
+  </script>
+</body>
+</html>
