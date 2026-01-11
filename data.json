@@ -42,35 +42,140 @@
     },
     "MAYO_MEDITERRANEAN": {
       "title": "Mayo Clinic — Mediterranean diet overview",
-      "url": "https://www.mayoclinic.org/health/mediterranean-diet/CL00011"
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/mediterranean-diet/art-20047801"
     },
     "NKF_STONE_PREVENTION": {
       "title": "National Kidney Foundation — Stone diet prevention basics",
       "url": "https://www.kidney.org/kidney-topics/six-easy-ways-to-prevent-kidney-stones"
+    },
+    "MAYO_HOT_FLASHES": {
+      "title": "Mayo Clinic — Hot flashes (diagnosis & treatment / self-care triggers)",
+      "url": "https://www.mayoclinic.org/diseases-conditions/hot-flashes/diagnosis-treatment/drc-20352795"
+    },
+    "NKF_POTASSIUM_CKD": {
+      "title": "National Kidney Foundation — Potassium and your CKD diet",
+      "url": "https://www.kidney.org/kidney-topics/potassium-and-your-ckd-diet"
+    },
+    "NIDDK_POTASSIUM_TIPS": {
+      "title": "NIDDK — Potassium tips for people with chronic kidney disease (PDF)",
+      "url": "https://www.niddk.nih.gov/-/media/Files/Health-Information/Kidney-Disease/When-you-have-kidney-disease/potassium_tips.pdf"
+    },
+    "NIH_ODS_POTASSIUM": {
+      "title": "NIH Office of Dietary Supplements — Potassium Fact Sheet",
+      "url": "https://ods.od.nih.gov/factsheets/Potassium-Consumer/"
+    },
+    "NIDDK_GERD_DIET": {
+      "title": "NIDDK — Eating, Diet, & Nutrition for GER & GERD",
+      "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/acid-reflux-ger-gerd-adults/eating-diet-nutrition"
+    },
+    "MAYO_GOUT": {
+      "title": "Mayo Clinic — Gout (diet / purine-rich foods)",
+      "url": "https://www.mayoclinic.org/diseases-conditions/gout/diagnosis-treatment/drc-20372865"
+    },
+    "NCCIH_PEPPERMINT_IBS": {
+      "title": "NCCIH (NIH) — IBS & complementary health approaches (peppermint oil evidence)",
+      "url": "https://www.nccih.nih.gov/health/providers/digest/irritable-bowel-syndrome-and-complementary-health-approaches"
+    },
+    "HARVARD_SLEEP_CAFFEINE": {
+      "title": "Harvard Health — Sleep disruption factors (includes caffeine advice)",
+      "url": "https://www.health.harvard.edu/staying-healthy/top-4-reasons-why-youre-not-sleeping-through-the-night"
+    },
+    "NCCIH_GINGER": {
+      "title": "NCCIH (NIH) — Nutritional approaches (includes ginger uses & safety notes)",
+      "url": "https://www.nccih.nih.gov/health/providers/digest/nutritional-approaches-for-musculoskeletal-pain-and-inflammation-science"
+    },
+    "WHO_NSS_GUIDELINE": {
+      "title": "World Health Organization — Use of non-sugar sweeteners: WHO guideline (2023)",
+      "url": "https://iris.who.int/handle/10665/367660"
+    },
+    "MAYO_SUGAR_SUBS": {
+      "title": "Mayo Clinic — Artificial sweeteners and other sugar substitutes",
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/artificial-sweeteners/art-20046936"
+    },
+    "WHI_ASB_UI": {
+      "title": "Menopause (WHI) — Artificially sweetened beverages and urinary incontinence in postmenopausal women (2022)",
+      "url": "https://www.research.ed.ac.uk/en/publications/artificially-sweetened-beverages-and-the-risk-of-incident-urinary-"
     }
   },
   "symptoms": {
-    "hot_flashes": { "label": "Hot Flashes", "icon": "🔥" },
-    "sleep": { "label": "Sleep", "icon": "💤" },
-    "bone_joint": { "label": "Bones & Joints", "icon": "🦴" },
-    "fatigue": { "label": "Fatigue", "icon": "🔋" },
-    "gut": { "label": "Gut Health", "icon": "🍏" },
-    "stress": { "label": "Stress", "icon": "🧘" },
-    "weight": { "label": "Weight", "icon": "⚖️" },
-    "bloating": { "label": "Bloating", "icon": "🎈" },
-    "heart": { "label": "Heart", "icon": "❤️" },
-    "blood_sugar": { "label": "Blood Sugar", "icon": "🩸" },
-    "mood": { "label": "Mood", "icon": "🙂" },
-    "brain_fog": { "label": "Brain Fog", "icon": "🧠" },
-    "nausea": { "label": "Nausea", "icon": "🤢" }
+    "hot_flashes": {
+      "label": "Hot Flashes",
+      "icon": "🔥"
+    },
+    "sleep": {
+      "label": "Sleep",
+      "icon": "💤"
+    },
+    "bone_joint": {
+      "label": "Bones & Joints",
+      "icon": "🦴"
+    },
+    "fatigue": {
+      "label": "Fatigue",
+      "icon": "🔋"
+    },
+    "gut": {
+      "label": "Gut Health",
+      "icon": "🍏"
+    },
+    "stress": {
+      "label": "Stress",
+      "icon": "🧘"
+    },
+    "weight": {
+      "label": "Weight",
+      "icon": "⚖️"
+    },
+    "bloating": {
+      "label": "Bloating",
+      "icon": "🎈"
+    },
+    "heart": {
+      "label": "Heart",
+      "icon": "❤️"
+    },
+    "blood_sugar": {
+      "label": "Blood Sugar",
+      "icon": "🩸"
+    },
+    "mood": {
+      "label": "Mood",
+      "icon": "🙂"
+    },
+    "brain_fog": {
+      "label": "Brain Fog",
+      "icon": "🧠"
+    },
+    "nausea": {
+      "label": "Nausea",
+      "icon": "🤢"
+    }
   },
   "preferences": {
-    "plant_only": { "label": "Plant-Based", "icon": "🌱" },
-    "budget": { "label": "Budget", "icon": "💲" },
-    "gluten_free": { "label": "Gluten-Free", "icon": "🌾" },
-    "dairy_free": { "label": "Dairy-Free", "icon": "🥛" },
-    "low_fodmap": { "label": "Low-FODMAP", "icon": "🫧" },
-    "high_fiber": { "label": "High Fiber", "icon": "🌿" }
+    "plant_only": {
+      "label": "Plant-Based",
+      "icon": "🌱"
+    },
+    "budget": {
+      "label": "Budget",
+      "icon": "💲"
+    },
+    "gluten_free": {
+      "label": "Gluten-Free",
+      "icon": "🌾"
+    },
+    "dairy_free": {
+      "label": "Dairy-Free",
+      "icon": "🥛"
+    },
+    "low_fodmap": {
+      "label": "Low-FODMAP",
+      "icon": "🫧"
+    },
+    "high_fiber": {
+      "label": "High Fiber",
+      "icon": "🌿"
+    }
   },
   "items": [
     {
@@ -79,12 +184,28 @@
       "name": "Edamame",
       "subtitle": "whole soy",
       "emoji": "🫛",
-      "symptoms": ["hot_flashes", "bone_joint", "fatigue", "heart", "blood_sugar", "weight"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber", "budget"],
+      "symptoms": [
+        "hot_flashes",
+        "bone_joint",
+        "fatigue",
+        "heart",
+        "blood_sugar",
+        "weight"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "high_fiber",
+        "budget"
+      ],
       "isPlant": true,
       "price": 2.99,
       "unit": "frozen bag",
-      "availability": ["Regular supermarket", "Asian market"],
+      "availability": [
+        "Regular supermarket",
+        "Asian market"
+      ],
       "benefit": "Whole-soy protein + fiber; isoflavones may reduce hot flashes in some.",
       "impact": [
         "Hot flashes: whole soy foods may reduce frequency/severity for some people.",
@@ -95,12 +216,16 @@
       "cautions": [
         "Soy allergy → avoid.",
         "If on thyroid medication, take meds separately from high-fiber/soy meals.",
-        "Prefer whole soy foods over high-dose isoflavone supplements."
+        "Prefer whole soy foods over high-dose isoflavone supplements.",
+        "CKD/hyperkalemia or on potassium-raising meds (ACE/ARB, spironolactone, etc.): this can be a higher-potassium food—discuss portions/labels."
       ],
       "evidence": {
         "level": "Moderate",
         "summary": "Whole soy foods are commonly recommended over supplements; symptom response varies.",
-        "refs": ["MAYO_SOY_BC", "AICR_SOY_CANCER"]
+        "refs": [
+          "MAYO_SOY_BC",
+          "AICR_SOY_CANCER"
+        ]
       }
     },
     {
@@ -109,12 +234,26 @@
       "name": "Tofu",
       "subtitle": "whole soy protein",
       "emoji": "⬜",
-      "symptoms": ["hot_flashes", "bone_joint", "weight", "blood_sugar", "heart"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "budget"],
+      "symptoms": [
+        "hot_flashes",
+        "bone_joint",
+        "weight",
+        "blood_sugar",
+        "heart"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "budget"
+      ],
       "isPlant": true,
       "price": 1.99,
       "unit": "14–16oz block",
-      "availability": ["Regular supermarket", "Asian market"],
+      "availability": [
+        "Regular supermarket",
+        "Asian market"
+      ],
       "benefit": "Whole soy isoflavones + protein; easy swap for higher-sat-fat proteins.",
       "impact": [
         "Hot flashes: soy foods may help some people.",
@@ -124,12 +263,16 @@
       "recipe": "Press 10 min, cube, air-fry 400°F ~12 min with soy sauce + garlic + ginger.",
       "cautions": [
         "Soy allergy → avoid.",
-        "Choose lower-sodium marinades if bloating/water retention."
+        "Choose lower-sodium marinades if bloating/water retention.",
+        "CKD/hyperkalemia or on potassium-raising meds (ACE/ARB, spironolactone, etc.): this can be a higher-potassium food—discuss portions/labels."
       ],
       "evidence": {
         "level": "Moderate",
         "summary": "Whole soy foods are considered reasonable in dietary patterns; supplements differ.",
-        "refs": ["MAYO_SOY_BC", "AICR_SOY_CANCER"]
+        "refs": [
+          "MAYO_SOY_BC",
+          "AICR_SOY_CANCER"
+        ]
       }
     },
     {
@@ -138,12 +281,27 @@
       "name": "Tempeh",
       "subtitle": "fermented soy",
       "emoji": "🧱",
-      "symptoms": ["hot_flashes", "gut", "weight", "blood_sugar", "heart"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber"],
+      "symptoms": [
+        "hot_flashes",
+        "gut",
+        "weight",
+        "blood_sugar",
+        "heart"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "high_fiber"
+      ],
       "isPlant": true,
       "price": 3.99,
       "unit": "8oz",
-      "availability": ["Regular supermarket", "Natural foods store", "Asian market"],
+      "availability": [
+        "Regular supermarket",
+        "Natural foods store",
+        "Asian market"
+      ],
       "benefit": "Fermented whole soy: protein + some people find it gentler than beans.",
       "impact": [
         "Hot flashes: soy-based option (response varies).",
@@ -153,12 +311,15 @@
       "recipe": "Slice, pan-sear 3 min/side. Glaze with maple + mustard + garlic.",
       "cautions": [
         "Soy allergy → avoid.",
-        "Fermented foods can trigger symptoms in histamine-sensitive people (rare)."
+        "Fermented foods can trigger symptoms in histamine-sensitive people (rare).",
+        "CKD/hyperkalemia or on potassium-raising meds (ACE/ARB, spironolactone, etc.): this can be a higher-potassium food—discuss portions/labels."
       ],
       "evidence": {
         "level": "Moderate",
         "summary": "Whole soy foods are preferred over supplements; symptom response varies.",
-        "refs": ["MAYO_SOY_BC"]
+        "refs": [
+          "MAYO_SOY_BC"
+        ]
       }
     },
     {
@@ -167,12 +328,27 @@
       "name": "Ground Flax",
       "subtitle": "lignans + fiber",
       "emoji": "🌾",
-      "symptoms": ["hot_flashes", "gut", "heart", "blood_sugar", "weight"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber", "budget"],
+      "symptoms": [
+        "hot_flashes",
+        "gut",
+        "heart",
+        "blood_sugar",
+        "weight"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "high_fiber",
+        "budget"
+      ],
       "isPlant": true,
       "price": 4.49,
       "unit": "16oz bag",
-      "availability": ["Regular supermarket", "Natural foods store"],
+      "availability": [
+        "Regular supermarket",
+        "Natural foods store"
+      ],
       "benefit": "Lignans + soluble fiber; supports gut and metabolic health.",
       "impact": [
         "Gut/bloating: helps regularity (increase slowly).",
@@ -187,7 +363,9 @@
       "evidence": {
         "level": "Strong",
         "summary": "Dietary fiber benefits hunger/blood sugar/cholesterol; flax is a fiber-rich add-in.",
-        "refs": ["HARVARD_FIBER"]
+        "refs": [
+          "HARVARD_FIBER"
+        ]
       }
     },
     {
@@ -196,12 +374,24 @@
       "name": "Sesame/Tahini",
       "subtitle": "healthy fats",
       "emoji": "🫙",
-      "symptoms": ["bone_joint", "heart", "blood_sugar", "weight"],
-      "tags": ["plant_only", "gluten_free", "dairy_free"],
+      "symptoms": [
+        "bone_joint",
+        "heart",
+        "blood_sugar",
+        "weight"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free"
+      ],
       "isPlant": true,
       "price": 5.99,
       "unit": "jar",
-      "availability": ["Regular supermarket", "Middle Eastern market"],
+      "availability": [
+        "Regular supermarket",
+        "Middle Eastern market"
+      ],
       "benefit": "Healthy fats + minerals; easy calcium-adjacent add-in.",
       "impact": [
         "Bones: useful in a calcium-supportive diet pattern.",
@@ -210,12 +400,15 @@
       "recipe": "Whisk tahini + lemon + water + garlic = instant dressing.",
       "cautions": [
         "Sesame allergy → avoid.",
-        "Portion matters (energy-dense)."
+        "Portion matters (energy-dense).",
+        "Kidney stones (calcium oxalate): some nuts/seeds/beans/sweet potato can be higher oxalate—portion and pair with calcium-containing foods if advised."
       ],
       "evidence": {
         "level": "Emerging",
         "summary": "Supports overall nutrient-dense patterns; direct symptom data limited.",
-        "refs": ["MAYO_MEDITERRANEAN"]
+        "refs": [
+          "MAYO_MEDITERRANEAN"
+        ]
       }
     },
     {
@@ -224,12 +417,23 @@
       "name": "Walnuts",
       "subtitle": "ALA omega-3",
       "emoji": "🌰",
-      "symptoms": ["heart", "stress", "mood", "weight"],
-      "tags": ["plant_only", "gluten_free", "dairy_free"],
+      "symptoms": [
+        "heart",
+        "stress",
+        "mood",
+        "weight"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free"
+      ],
       "isPlant": true,
       "price": 7.99,
       "unit": "bag",
-      "availability": ["Regular supermarket"],
+      "availability": [
+        "Regular supermarket"
+      ],
       "benefit": "ALA omega-3 + satiety fats; Mediterranean-friendly snack.",
       "impact": [
         "Heart: supports cardiometabolic eating pattern.",
@@ -238,12 +442,15 @@
       "recipe": "Add to oats/salads; or eat a small handful with fruit.",
       "cautions": [
         "Nut allergy → avoid.",
-        "Portion matters (calorie-dense)."
+        "Portion matters (calorie-dense).",
+        "Kidney stones (calcium oxalate): some nuts/seeds/beans/sweet potato can be higher oxalate—portion and pair with calcium-containing foods if advised."
       ],
       "evidence": {
         "level": "Moderate",
         "summary": "Mediterranean-style patterns consistently support heart/metabolic health.",
-        "refs": ["MAYO_MEDITERRANEAN"]
+        "refs": [
+          "MAYO_MEDITERRANEAN"
+        ]
       }
     },
     {
@@ -252,12 +459,24 @@
       "name": "Steel-cut Oats",
       "subtitle": "soluble fiber",
       "emoji": "🥣",
-      "symptoms": ["blood_sugar", "weight", "heart", "gut"],
-      "tags": ["plant_only", "dairy_free", "high_fiber", "budget"],
+      "symptoms": [
+        "blood_sugar",
+        "weight",
+        "heart",
+        "gut"
+      ],
+      "tags": [
+        "plant_only",
+        "dairy_free",
+        "high_fiber",
+        "budget"
+      ],
       "isPlant": true,
       "price": 3.49,
       "unit": "container",
-      "availability": ["Regular supermarket"],
+      "availability": [
+        "Regular supermarket"
+      ],
       "benefit": "Soluble fiber for hunger, cholesterol, and blood sugar.",
       "impact": [
         "Weight: fiber helps fullness; supports steady energy.",
@@ -272,7 +491,9 @@
       "evidence": {
         "level": "Strong",
         "summary": "Fiber supports hunger and blood sugar control; soluble fiber can lower cholesterol.",
-        "refs": ["HARVARD_FIBER"]
+        "refs": [
+          "HARVARD_FIBER"
+        ]
       }
     },
     {
@@ -281,12 +502,24 @@
       "name": "Barley",
       "subtitle": "beta-glucan fiber",
       "emoji": "🌾",
-      "symptoms": ["heart", "blood_sugar", "weight", "gut"],
-      "tags": ["plant_only", "dairy_free", "high_fiber", "budget"],
+      "symptoms": [
+        "heart",
+        "blood_sugar",
+        "weight",
+        "gut"
+      ],
+      "tags": [
+        "plant_only",
+        "dairy_free",
+        "high_fiber",
+        "budget"
+      ],
       "isPlant": true,
       "price": 2.49,
       "unit": "bag",
-      "availability": ["Regular supermarket"],
+      "availability": [
+        "Regular supermarket"
+      ],
       "benefit": "Very high soluble fiber; great for soups/bowls.",
       "impact": [
         "Heart: soluble fiber supports cholesterol lowering.",
@@ -300,7 +533,9 @@
       "evidence": {
         "level": "Strong",
         "summary": "Soluble fiber supports blood sugar and cholesterol; helps hunger control.",
-        "refs": ["HARVARD_FIBER"]
+        "refs": [
+          "HARVARD_FIBER"
+        ]
       }
     },
     {
@@ -309,12 +544,26 @@
       "name": "Lentils",
       "subtitle": "protein + fiber",
       "emoji": "🫘",
-      "symptoms": ["blood_sugar", "weight", "gut", "heart", "fatigue"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber", "budget"],
+      "symptoms": [
+        "blood_sugar",
+        "weight",
+        "gut",
+        "heart",
+        "fatigue"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "high_fiber",
+        "budget"
+      ],
       "isPlant": true,
       "price": 1.89,
       "unit": "bag",
-      "availability": ["Regular supermarket"],
+      "availability": [
+        "Regular supermarket"
+      ],
       "benefit": "Fiber + protein; excellent for weight and glucose stability.",
       "impact": [
         "Weight: high satiety per calorie.",
@@ -324,12 +573,16 @@
       "recipe": "Simmer 15–20 min with garlic + cumin + canned tomatoes.",
       "cautions": [
         "If bloating, start with small servings; consider well-cooked lentils.",
-        "Rinse canned lentils to reduce gas triggers."
+        "Rinse canned lentils to reduce gas triggers.",
+        "CKD/hyperkalemia or on potassium-raising meds (ACE/ARB, spironolactone, etc.): this can be a higher-potassium food—discuss portions/labels.",
+        "Kidney stones (calcium oxalate): some nuts/seeds/beans/sweet potato can be higher oxalate—portion and pair with calcium-containing foods if advised."
       ],
       "evidence": {
         "level": "Strong",
         "summary": "Fiber supports hunger and blood sugar control; legumes are core high-fiber foods.",
-        "refs": ["HARVARD_FIBER"]
+        "refs": [
+          "HARVARD_FIBER"
+        ]
       }
     },
     {
@@ -338,12 +591,25 @@
       "name": "Chickpeas",
       "subtitle": "versatile legume",
       "emoji": "🥣",
-      "symptoms": ["gut", "blood_sugar", "weight", "heart"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber", "budget"],
+      "symptoms": [
+        "gut",
+        "blood_sugar",
+        "weight",
+        "heart"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "high_fiber",
+        "budget"
+      ],
       "isPlant": true,
       "price": 0.99,
       "unit": "can",
-      "availability": ["Regular supermarket"],
+      "availability": [
+        "Regular supermarket"
+      ],
       "benefit": "Fiber + protein; easy meal base.",
       "impact": [
         "Weight: fiber/protein improves satiety.",
@@ -352,12 +618,16 @@
       ],
       "recipe": "Roast 400°F with paprika + olive oil ~20 min for crunchy snack.",
       "cautions": [
-        "Bloating: rinse well; start small; consider hummus/pressure-cooked options."
+        "Bloating: rinse well; start small; consider hummus/pressure-cooked options.",
+        "CKD/hyperkalemia or on potassium-raising meds (ACE/ARB, spironolactone, etc.): this can be a higher-potassium food—discuss portions/labels.",
+        "Kidney stones (calcium oxalate): some nuts/seeds/beans/sweet potato can be higher oxalate—portion and pair with calcium-containing foods if advised."
       ],
       "evidence": {
         "level": "Strong",
         "summary": "High-fiber foods support hunger and blood sugar control.",
-        "refs": ["HARVARD_FIBER"]
+        "refs": [
+          "HARVARD_FIBER"
+        ]
       }
     },
     {
@@ -366,12 +636,26 @@
       "name": "Kale / Collards",
       "subtitle": "leafy greens",
       "emoji": "🥬",
-      "symptoms": ["bone_joint", "gut", "heart", "fatigue"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber", "budget"],
+      "symptoms": [
+        "bone_joint",
+        "gut",
+        "heart",
+        "fatigue"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "high_fiber",
+        "budget"
+      ],
       "isPlant": true,
       "price": 2.29,
       "unit": "bunch",
-      "availability": ["Regular supermarket", "Farmers market"],
+      "availability": [
+        "Regular supermarket",
+        "Farmers market"
+      ],
       "benefit": "Fiber + vitamin K; supports bone-friendly eating patterns.",
       "impact": [
         "Bones: supports vitamin K intake (consistency matters with warfarin).",
@@ -384,7 +668,9 @@
       "evidence": {
         "level": "Strong",
         "summary": "Vitamin K is important for clotting and bones; consistency is key with warfarin.",
-        "refs": ["NIH_ODS_VITK"]
+        "refs": [
+          "NIH_ODS_VITK"
+        ]
       }
     },
     {
@@ -393,12 +679,25 @@
       "name": "Spinach",
       "subtitle": "leafy green",
       "emoji": "🥗",
-      "symptoms": ["bone_joint", "fatigue", "gut"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber", "budget"],
+      "symptoms": [
+        "bone_joint",
+        "fatigue",
+        "gut"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "high_fiber",
+        "budget"
+      ],
       "isPlant": true,
       "price": 2.99,
       "unit": "bag",
-      "availability": ["Regular supermarket", "Farmers market"],
+      "availability": [
+        "Regular supermarket",
+        "Farmers market"
+      ],
       "benefit": "Nutrient-dense leafy green; easy add to meals.",
       "impact": [
         "Bones/gut: part of high-veg, high-fiber pattern.",
@@ -407,12 +706,17 @@
       "recipe": "Add to omelets, soups, or quick sauté with garlic + lemon.",
       "cautions": [
         "Kidney stones (calcium oxalate): spinach is very high oxalate. Discuss limits and pair with calcium-containing foods.",
-        "Warfarin: keep vitamin K intake consistent."
+        "Warfarin: keep vitamin K intake consistent.",
+        "CKD/hyperkalemia or on potassium-raising meds (ACE/ARB, spironolactone, etc.): this can be a higher-potassium food—discuss portions/labels."
       ],
       "evidence": {
         "level": "Strong",
         "summary": "NKF/NIDDK highlight spinach as very high oxalate; calcium-with-meals can reduce oxalate absorption.",
-        "refs": ["NKF_CALCIUM_OXALATE", "NIDDK_STONES", "NIH_ODS_VITK"]
+        "refs": [
+          "NKF_CALCIUM_OXALATE",
+          "NIDDK_STONES",
+          "NIH_ODS_VITK"
+        ]
       }
     },
     {
@@ -421,12 +725,26 @@
       "name": "Broccoli",
       "subtitle": "cruciferous",
       "emoji": "🥦",
-      "symptoms": ["bone_joint", "heart", "gut", "blood_sugar"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber", "budget"],
+      "symptoms": [
+        "bone_joint",
+        "heart",
+        "gut",
+        "blood_sugar"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "high_fiber",
+        "budget"
+      ],
       "isPlant": true,
       "price": 1.89,
       "unit": "head",
-      "availability": ["Regular supermarket", "Farmers market"],
+      "availability": [
+        "Regular supermarket",
+        "Farmers market"
+      ],
       "benefit": "High fiber vegetable; great for bowls and stir-fries.",
       "impact": [
         "Gut/weight: fiber supports fullness and regularity.",
@@ -439,7 +757,9 @@
       "evidence": {
         "level": "Strong",
         "summary": "Fiber supports hunger/blood sugar control and gut regularity.",
-        "refs": ["HARVARD_FIBER"]
+        "refs": [
+          "HARVARD_FIBER"
+        ]
       }
     },
     {
@@ -448,12 +768,27 @@
       "name": "Sweet Potato",
       "subtitle": "prebiotic fiber",
       "emoji": "🍠",
-      "symptoms": ["gut", "bloating", "weight", "blood_sugar", "fatigue"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber", "budget"],
+      "symptoms": [
+        "gut",
+        "bloating",
+        "weight",
+        "blood_sugar",
+        "fatigue"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "high_fiber",
+        "budget"
+      ],
       "isPlant": true,
       "price": 1.29,
       "unit": "each",
-      "availability": ["Regular supermarket", "Farmers market"],
+      "availability": [
+        "Regular supermarket",
+        "Farmers market"
+      ],
       "benefit": "Fiber-rich carb; easier on blood sugar than refined grains.",
       "impact": [
         "Weight/blood sugar: fiber helps fullness and steadier energy.",
@@ -461,12 +796,17 @@
       ],
       "recipe": "Microwave 6–8 min; top with cinnamon + Greek yogurt or tahini.",
       "cautions": [
-        "Kidney stones: some guidance lists sweet potato as higher oxalate. Discuss portions."
+        "Kidney stones: some guidance lists sweet potato as higher oxalate. Discuss portions.",
+        "CKD/hyperkalemia or on potassium-raising meds (ACE/ARB, spironolactone, etc.): this can be a higher-potassium food—discuss portions/labels.",
+        "Kidney stones (calcium oxalate): some nuts/seeds/beans/sweet potato can be higher oxalate—portion and pair with calcium-containing foods if advised."
       ],
       "evidence": {
         "level": "Moderate",
         "summary": "For stone formers, oxalate management + adequate dietary calcium are key concepts.",
-        "refs": ["NKF_CALCIUM_OXALATE", "NIDDK_STONES"]
+        "refs": [
+          "NKF_CALCIUM_OXALATE",
+          "NIDDK_STONES"
+        ]
       }
     },
     {
@@ -475,12 +815,25 @@
       "name": "Banana",
       "subtitle": "gentle fruit",
       "emoji": "🍌",
-      "symptoms": ["gut", "bloating", "fatigue", "stress"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "budget", "low_fodmap"],
+      "symptoms": [
+        "gut",
+        "bloating",
+        "fatigue",
+        "stress"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "budget",
+        "low_fodmap"
+      ],
       "isPlant": true,
       "price": 0.29,
       "unit": "each",
-      "availability": ["Regular supermarket"],
+      "availability": [
+        "Regular supermarket"
+      ],
       "benefit": "Gentle fruit; convenient snack; often well-tolerated.",
       "impact": [
         "Bloating: often easier than many fruits; good starter fiber.",
@@ -488,12 +841,16 @@
       ],
       "recipe": "Banana + peanut butter or banana in oats/smoothies.",
       "cautions": [
-        "If very sensitive to FODMAPs, ripeness matters (some prefer less ripe)."
+        "If very sensitive to FODMAPs, ripeness matters (some prefer less ripe).",
+        "CKD/hyperkalemia or on potassium-raising meds (ACE/ARB, spironolactone, etc.): this can be a higher-potassium food—discuss portions/labels."
       ],
       "evidence": {
         "level": "Moderate",
         "summary": "A practical, gentle way to increase fiber intake gradually.",
-        "refs": ["HARVARD_FIBER"]
+        "refs": [
+          "HARVARD_FIBER",
+          "NKF_POTASSIUM_CKD"
+        ]
       }
     },
     {
@@ -502,12 +859,27 @@
       "name": "Berries",
       "subtitle": "frozen or fresh",
       "emoji": "🫐",
-      "symptoms": ["heart", "brain_fog", "mood", "blood_sugar", "gut", "fatigue"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "high_fiber"],
+      "symptoms": [
+        "heart",
+        "brain_fog",
+        "mood",
+        "blood_sugar",
+        "gut",
+        "fatigue"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "high_fiber"
+      ],
       "isPlant": true,
       "price": 3.99,
       "unit": "frozen bag",
-      "availability": ["Regular supermarket", "Farmers market (seasonal)"],
+      "availability": [
+        "Regular supermarket",
+        "Farmers market (seasonal)"
+      ],
       "benefit": "High polyphenols + fiber; low glycemic fruit choice.",
       "impact": [
         "Blood sugar: fiber helps reduce spikes vs juice/sweets.",
@@ -520,7 +892,9 @@
       "evidence": {
         "level": "Strong",
         "summary": "Fiber supports hunger and blood sugar control; fruit/veg fiber benefits overall health.",
-        "refs": ["HARVARD_FIBER"]
+        "refs": [
+          "HARVARD_FIBER"
+        ]
       }
     },
     {
@@ -529,12 +903,25 @@
       "name": "Tomatoes",
       "subtitle": "flavonoid-rich",
       "emoji": "🍅",
-      "symptoms": ["heart", "brain_fog", "fatigue"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "budget", "low_fodmap"],
+      "symptoms": [
+        "heart",
+        "brain_fog",
+        "fatigue"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "budget",
+        "low_fodmap"
+      ],
       "isPlant": true,
       "price": 0.99,
       "unit": "each",
-      "availability": ["Regular supermarket", "Farmers market (seasonal)"],
+      "availability": [
+        "Regular supermarket",
+        "Farmers market (seasonal)"
+      ],
       "benefit": "Flavonoid-rich produce; easy base for meals.",
       "impact": [
         "Heart: supports Mediterranean-style meals.",
@@ -542,12 +929,17 @@
       ],
       "recipe": "Quick tomato + olive oil + basil + mozzarella (or tofu feta).",
       "cautions": [
-        "If reflux, acidic foods can trigger symptoms in some."
+        "If reflux/GERD, acidic foods can trigger symptoms in some.",
+        "CKD/hyperkalemia or on potassium-raising meds (ACE/ARB, spironolactone, etc.): this can be a higher-potassium food—discuss portions/labels."
       ],
       "evidence": {
         "level": "Moderate",
         "summary": "Mediterranean-style patterns support cardiometabolic health.",
-        "refs": ["MAYO_MEDITERRANEAN"]
+        "refs": [
+          "MAYO_MEDITERRANEAN",
+          "NKF_POTASSIUM_CKD",
+          "NIDDK_GERD_DIET"
+        ]
       }
     },
     {
@@ -556,12 +948,26 @@
       "name": "Ginger",
       "subtitle": "digestive comfort",
       "emoji": "🫚",
-      "symptoms": ["bloating", "gut", "stress", "nausea"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "budget", "low_fodmap"],
+      "symptoms": [
+        "bloating",
+        "gut",
+        "stress",
+        "nausea"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "budget",
+        "low_fodmap"
+      ],
       "isPlant": true,
       "price": 0.79,
       "unit": "knob",
-      "availability": ["Regular supermarket", "Asian market"],
+      "availability": [
+        "Regular supermarket",
+        "Asian market"
+      ],
       "benefit": "Digestive comfort flavor; good swap for sugary sauces.",
       "impact": [
         "Bloating: ginger tea can be soothing after meals.",
@@ -569,12 +975,14 @@
       ],
       "recipe": "Slice into hot water + lemon; or add to stir-fry.",
       "cautions": [
-        "If on blood thinners or with bleeding risk, ask clinician about very large supplemental intakes."
+        "If on anticoagulants/antiplatelets or with bleeding risk, ask clinician before high-dose ginger supplements (culinary amounts are usually fine)."
       ],
       "evidence": {
         "level": "Emerging",
         "summary": "Traditional GI comfort food; direct menopause symptom trials limited.",
-        "refs": ["HARVARD_FIBER"]
+        "refs": [
+          "NCCIH_GINGER"
+        ]
       }
     },
     {
@@ -583,12 +991,25 @@
       "name": "Turmeric",
       "subtitle": "anti-inflammatory spice",
       "emoji": "🟠",
-      "symptoms": ["bone_joint", "stress", "mood"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "budget", "low_fodmap"],
+      "symptoms": [
+        "bone_joint",
+        "stress",
+        "mood"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "budget",
+        "low_fodmap"
+      ],
       "isPlant": true,
       "price": 2.49,
       "unit": "jar (spice)",
-      "availability": ["Regular supermarket", "Indian market"],
+      "availability": [
+        "Regular supermarket",
+        "Indian market"
+      ],
       "benefit": "Flavorful spice; supports lower-sugar cooking.",
       "impact": [
         "Joint comfort: culinary turmeric is a reasonable add-in.",
@@ -596,12 +1017,15 @@
       ],
       "recipe": "Tofu scramble: turmeric + black pepper + onions + spinach.",
       "cautions": [
-        "Kidney stones: NKF cautions some turmeric supplements can be high oxalate—culinary amounts usually fine."
+        "Kidney stones: avoid high-dose turmeric/curcumin supplements if you’re a stone former; culinary amounts are usually fine."
       ],
       "evidence": {
         "level": "Moderate",
         "summary": "Stone guidance emphasizes caution with high-oxalate supplements; focus on whole-food patterns.",
-        "refs": ["NKF_CALCIUM_OXALATE"]
+        "refs": [
+          "NKF_STONE_PREVENTION",
+          "NKF_CALCIUM_OXALATE"
+        ]
       }
     },
     {
@@ -610,12 +1034,24 @@
       "name": "Green Tea",
       "subtitle": "polyphenols",
       "emoji": "🍵",
-      "symptoms": ["brain_fog", "heart", "stress"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "budget", "low_fodmap"],
+      "symptoms": [
+        "brain_fog",
+        "heart",
+        "stress"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "budget",
+        "low_fodmap"
+      ],
       "isPlant": true,
       "price": 3.49,
       "unit": "box",
-      "availability": ["Regular supermarket"],
+      "availability": [
+        "Regular supermarket"
+      ],
       "benefit": "Polyphenols; lower-caffeine alternative to coffee for some.",
       "impact": [
         "Stress/brain: warm ritual; gentler stimulant than many coffees.",
@@ -628,7 +1064,9 @@
       "evidence": {
         "level": "Moderate",
         "summary": "Pattern-based evidence favors plant-forward, lower-added-sugar choices.",
-        "refs": ["MAYO_MEDITERRANEAN"]
+        "refs": [
+          "MAYO_MEDITERRANEAN"
+        ]
       }
     },
     {
@@ -637,12 +1075,24 @@
       "name": "Peppermint Tea",
       "subtitle": "cooling + digestive",
       "emoji": "🍃",
-      "symptoms": ["bloating", "gut", "hot_flashes"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "budget", "low_fodmap"],
+      "symptoms": [
+        "bloating",
+        "gut",
+        "hot_flashes"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "budget",
+        "low_fodmap"
+      ],
       "isPlant": true,
       "price": 3.49,
       "unit": "box",
-      "availability": ["Regular supermarket"],
+      "availability": [
+        "Regular supermarket"
+      ],
       "benefit": "Cooling tea; digestive comfort for some.",
       "impact": [
         "Bloating: warm tea after meals can help comfort.",
@@ -655,7 +1105,10 @@
       "evidence": {
         "level": "Emerging",
         "summary": "Symptom comfort strategy; individualized response.",
-        "refs": ["HARVARD_FIBER"]
+        "refs": [
+          "NCCIH_PEPPERMINT_IBS",
+          "NIDDK_GERD_DIET"
+        ]
       }
     },
     {
@@ -664,12 +1117,23 @@
       "name": "Tart Cherry Juice",
       "subtitle": "sleep support",
       "emoji": "🍒",
-      "symptoms": ["sleep", "stress", "bone_joint"],
-      "tags": ["plant_only", "gluten_free", "dairy_free"],
+      "symptoms": [
+        "sleep",
+        "stress",
+        "bone_joint"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free"
+      ],
       "isPlant": true,
       "price": 6.99,
       "unit": "bottle",
-      "availability": ["Regular supermarket", "Natural foods store"],
+      "availability": [
+        "Regular supermarket",
+        "Natural foods store"
+      ],
       "benefit": "Sleep routine support; can be helpful for some.",
       "impact": [
         "Sleep: small serving as part of consistent bedtime routine.",
@@ -682,7 +1146,9 @@
       "evidence": {
         "level": "Emerging",
         "summary": "Sleep effects vary; prioritize overall sleep hygiene and low added sugar.",
-        "refs": ["HARVARD_FIBER"]
+        "refs": [
+          "HARVARD_FIBER"
+        ]
       }
     },
     {
@@ -691,12 +1157,24 @@
       "name": "Salmon",
       "subtitle": "omega-3 + vitamin D",
       "emoji": "🐟",
-      "symptoms": ["bone_joint", "fatigue", "mood", "heart", "brain_fog"],
-      "tags": ["gluten_free", "dairy_free"],
+      "symptoms": [
+        "bone_joint",
+        "fatigue",
+        "mood",
+        "heart",
+        "brain_fog"
+      ],
+      "tags": [
+        "gluten_free",
+        "dairy_free"
+      ],
       "isPlant": false,
       "price": 12.99,
       "unit": "per lb",
-      "availability": ["Regular supermarket", "Fish market"],
+      "availability": [
+        "Regular supermarket",
+        "Fish market"
+      ],
       "benefit": "Omega-3s + vitamin D supports bone and heart patterns.",
       "impact": [
         "Bone: provides vitamin D; helps calcium use in the body.",
@@ -711,7 +1189,11 @@
       "evidence": {
         "level": "Strong",
         "summary": "Vitamin D is naturally found in fatty fish; Mediterranean patterns support heart health.",
-        "refs": ["NIH_ODS_VITD", "DGA_VITD_FOODS", "MAYO_MEDITERRANEAN"]
+        "refs": [
+          "NIH_ODS_VITD",
+          "DGA_VITD_FOODS",
+          "MAYO_MEDITERRANEAN"
+        ]
       }
     },
     {
@@ -720,12 +1202,23 @@
       "name": "Sardines",
       "subtitle": "budget omega-3",
       "emoji": "🐟",
-      "symptoms": ["bone_joint", "heart", "fatigue", "weight"],
-      "tags": ["gluten_free", "dairy_free", "budget"],
+      "symptoms": [
+        "bone_joint",
+        "heart",
+        "fatigue",
+        "weight"
+      ],
+      "tags": [
+        "gluten_free",
+        "dairy_free",
+        "budget"
+      ],
       "isPlant": false,
       "price": 2.29,
       "unit": "can",
-      "availability": ["Regular supermarket"],
+      "availability": [
+        "Regular supermarket"
+      ],
       "benefit": "Budget-friendly omega-3 + vitamin D option.",
       "impact": [
         "Bone: vitamin D food source; pairs well with calcium-rich foods.",
@@ -734,12 +1227,18 @@
       "recipe": "Mash with lemon + mustard; eat on whole-grain toast or salad.",
       "cautions": [
         "Sodium varies—choose low-sodium if bloating/water retention.",
-        "Fish allergy → avoid."
+        "Fish allergy → avoid.",
+        "Gout/hyperuricemia: sardines are high in purines—limit if you flare and follow your gout plan."
       ],
       "evidence": {
         "level": "Strong",
         "summary": "Vitamin D food sources include fish; Mediterranean pattern supports heart/metabolic health.",
-        "refs": ["NIH_ODS_VITD", "DGA_VITD_FOODS", "MAYO_MEDITERRANEAN"]
+        "refs": [
+          "NIH_ODS_VITD",
+          "DGA_VITD_FOODS",
+          "MAYO_MEDITERRANEAN",
+          "MAYO_GOUT"
+        ]
       }
     },
     {
@@ -748,12 +1247,23 @@
       "name": "Eggs",
       "subtitle": "vitamin D + protein",
       "emoji": "🥚",
-      "symptoms": ["fatigue", "bone_joint", "weight", "brain_fog"],
-      "tags": ["gluten_free", "budget"],
+      "symptoms": [
+        "fatigue",
+        "bone_joint",
+        "weight",
+        "brain_fog"
+      ],
+      "tags": [
+        "gluten_free",
+        "budget"
+      ],
       "isPlant": false,
       "price": 3.49,
       "unit": "dozen",
-      "availability": ["Regular supermarket", "Farmers market"],
+      "availability": [
+        "Regular supermarket",
+        "Farmers market"
+      ],
       "benefit": "Convenient protein; egg yolk provides small vitamin D amounts.",
       "impact": [
         "Weight: protein breakfast helps satiety.",
@@ -766,7 +1276,9 @@
       "evidence": {
         "level": "Strong",
         "summary": "Egg yolks contain small amounts of vitamin D; food sources can help meet needs.",
-        "refs": ["NIH_ODS_VITD"]
+        "refs": [
+          "NIH_ODS_VITD"
+        ]
       }
     },
     {
@@ -775,12 +1287,25 @@
       "name": "UV-exposed Mushrooms",
       "subtitle": "vitamin D",
       "emoji": "🍄",
-      "symptoms": ["bone_joint", "fatigue", "mood"],
-      "tags": ["plant_only", "gluten_free", "dairy_free", "budget", "low_fodmap"],
+      "symptoms": [
+        "bone_joint",
+        "fatigue",
+        "mood"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "budget",
+        "low_fodmap"
+      ],
       "isPlant": true,
       "price": 2.49,
       "unit": "pack",
-      "availability": ["Regular supermarket", "Farmers market"],
+      "availability": [
+        "Regular supermarket",
+        "Farmers market"
+      ],
       "benefit": "Some mushrooms provide vitamin D (varies by exposure).",
       "impact": [
         "Bone: can contribute vitamin D intake.",
@@ -793,7 +1318,9 @@
       "evidence": {
         "level": "Strong",
         "summary": "NIH notes some mushrooms provide vitamin D in variable amounts.",
-        "refs": ["NIH_ODS_VITD"]
+        "refs": [
+          "NIH_ODS_VITD"
+        ]
       }
     },
     {
@@ -802,12 +1329,22 @@
       "name": "Fortified Soy/Oat Milk",
       "subtitle": "calcium + vitamin D",
       "emoji": "🥛",
-      "symptoms": ["bone_joint", "weight", "blood_sugar", "hot_flashes"],
-      "tags": ["plant_only", "dairy_free"],
+      "symptoms": [
+        "bone_joint",
+        "weight",
+        "blood_sugar",
+        "hot_flashes"
+      ],
+      "tags": [
+        "plant_only",
+        "dairy_free"
+      ],
       "isPlant": true,
       "price": 3.99,
       "unit": "carton",
-      "availability": ["Regular supermarket"],
+      "availability": [
+        "Regular supermarket"
+      ],
       "benefit": "Often fortified with vitamin D and calcium; soy adds protein/isoflavones.",
       "impact": [
         "Bone: fortified calcium + vitamin D helps dietary adequacy.",
@@ -816,12 +1353,19 @@
       "recipe": "Use in oats, smoothies, chia pudding, or coffee substitute.",
       "cautions": [
         "Choose unsweetened to reduce weight/blood sugar impact.",
-        "Soy allergy → choose oat/almond; note almond is higher oxalate."
+        "Soy allergy → choose oat/almond; note almond is higher oxalate.",
+        "CKD/hyperkalemia or on potassium-raising meds (ACE/ARB, spironolactone, etc.): this can be a higher-potassium food—discuss portions/labels.",
+        "If you have CKD: check labels—some plant milks add potassium/phosphate ingredients; choose options that fit your plan."
       ],
       "evidence": {
         "level": "Strong",
         "summary": "Vitamin D can be difficult to obtain from natural foods; fortified foods are commonly recommended.",
-        "refs": ["NIH_ODS_VITD", "DGA_VITD_FOODS"]
+        "refs": [
+          "NIH_ODS_VITD",
+          "DGA_VITD_FOODS",
+          "NKF_POTASSIUM_CKD",
+          "NIDDK_POTASSIUM_TIPS"
+        ]
       }
     },
     {
@@ -830,12 +1374,22 @@
       "name": "Natto",
       "subtitle": "vitamin K2 powerhouse",
       "emoji": "🫘",
-      "symptoms": ["bone_joint", "heart"],
-      "tags": ["plant_only", "gluten_free", "dairy_free"],
+      "symptoms": [
+        "bone_joint",
+        "heart"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free"
+      ],
       "isPlant": true,
       "price": 4.99,
       "unit": "3-pack (frozen)",
-      "availability": ["Asian market", "Specialty/online"],
+      "availability": [
+        "Asian market",
+        "Specialty/online"
+      ],
       "benefit": "Very high vitamin K2 (MK-7). Evidence for vascular markers; bone outcomes mixed.",
       "impact": [
         "Bone: vitamin K supports bone-related proteins, but trial results for BMD are mixed.",
@@ -849,7 +1403,11 @@
       "evidence": {
         "level": "Mixed",
         "summary": "Long-term MK-7 RCTs show mixed results for BMD but improvement in arterial stiffness.",
-        "refs": ["PUBMED_MK7_STIFFNESS", "PUBMED_MK7_BMD", "NIH_ODS_VITK"]
+        "refs": [
+          "PUBMED_MK7_STIFFNESS",
+          "PUBMED_MK7_BMD",
+          "NIH_ODS_VITK"
+        ]
       }
     },
     {
@@ -858,12 +1416,24 @@
       "name": "Alcohol",
       "subtitle": "hot flash trigger",
       "emoji": "🍷",
-      "symptoms": ["hot_flashes", "sleep", "mood", "weight", "blood_sugar"],
-      "tags": ["gluten_free", "dairy_free"],
+      "symptoms": [
+        "hot_flashes",
+        "sleep",
+        "mood",
+        "weight",
+        "blood_sugar"
+      ],
+      "tags": [
+        "gluten_free",
+        "dairy_free"
+      ],
       "isPlant": true,
       "price": 0,
       "unit": "limit/avoid",
-      "availability": ["Regular supermarket", "Restaurants/bars"],
+      "availability": [
+        "Regular supermarket",
+        "Restaurants/bars"
+      ],
       "benefit": "Common trigger for hot flashes + sleep disruption; increases calories quickly.",
       "impact": [
         "Hot flashes: can trigger or worsen for many.",
@@ -877,8 +1447,10 @@
       ],
       "evidence": {
         "level": "Moderate",
-        "summary": "Clinical guidance commonly lists alcohol as a hot-flash and sleep trigger.",
-        "refs": ["MAYO_MEDITERRANEAN"]
+        "summary": "Alcohol is a common hot-flash and sleep trigger; individual sensitivity varies.",
+        "refs": [
+          "MAYO_HOT_FLASHES"
+        ]
       }
     },
     {
@@ -887,12 +1459,23 @@
       "name": "High Caffeine (late day)",
       "subtitle": "sleep disruptor",
       "emoji": "☕",
-      "symptoms": ["sleep", "hot_flashes", "stress", "mood"],
-      "tags": ["gluten_free", "dairy_free"],
+      "symptoms": [
+        "sleep",
+        "hot_flashes",
+        "stress",
+        "mood"
+      ],
+      "tags": [
+        "gluten_free",
+        "dairy_free"
+      ],
       "isPlant": true,
       "price": 0,
       "unit": "limit after noon",
-      "availability": ["Coffee shops", "Supermarket"],
+      "availability": [
+        "Coffee shops",
+        "Supermarket"
+      ],
       "benefit": "Can worsen sleep/anxiety and may amplify hot flashes in some.",
       "impact": [
         "Sleep: delays onset and reduces depth for many people.",
@@ -906,8 +1489,12 @@
       ],
       "evidence": {
         "level": "Emerging",
-        "summary": "Trigger patterns are individualized; the sleep tradeoff is often the key issue.",
-        "refs": ["HARVARD_FIBER"]
+        "summary": "Caffeine can disrupt sleep; for some, it also triggers hot flashes or worsens reflux—timing and dose matter.",
+        "refs": [
+          "HARVARD_SLEEP_CAFFEINE",
+          "MAYO_HOT_FLASHES",
+          "NIDDK_GERD_DIET"
+        ]
       }
     },
     {
@@ -916,12 +1503,24 @@
       "name": "Spicy Foods",
       "subtitle": "if you flare",
       "emoji": "🌶️",
-      "symptoms": ["hot_flashes", "gut", "bloating", "sleep"],
-      "tags": ["plant_only", "gluten_free", "dairy_free"],
+      "symptoms": [
+        "hot_flashes",
+        "gut",
+        "bloating",
+        "sleep"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free"
+      ],
       "isPlant": true,
       "price": 0,
       "unit": "personal trigger",
-      "availability": ["Regular supermarket", "Restaurants"],
+      "availability": [
+        "Regular supermarket",
+        "Restaurants"
+      ],
       "benefit": "Common hot-flash/GERD trigger for some; not universal.",
       "impact": [
         "Hot flashes: can trigger in some people.",
@@ -934,8 +1533,11 @@
       ],
       "evidence": {
         "level": "Emerging",
-        "summary": "Trigger foods vary; using a personal trigger watchlist is often most effective.",
-        "refs": ["HARVARD_FIBER"]
+        "summary": "Spicy foods are a common trigger for hot flashes or reflux in some; use your symptom pattern as the guide.",
+        "refs": [
+          "MAYO_HOT_FLASHES",
+          "NIDDK_GERD_DIET"
+        ]
       }
     },
     {
@@ -944,12 +1546,23 @@
       "name": "Sugary Drinks",
       "subtitle": "soda/juice",
       "emoji": "🥤",
-      "symptoms": ["weight", "blood_sugar", "bloating", "mood"],
-      "tags": ["plant_only", "gluten_free", "dairy_free"],
+      "symptoms": [
+        "weight",
+        "blood_sugar",
+        "bloating",
+        "mood"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free"
+      ],
       "isPlant": true,
       "price": 0,
       "unit": "avoid",
-      "availability": ["Regular supermarket"],
+      "availability": [
+        "Regular supermarket"
+      ],
       "benefit": "Fast sugar spike + low satiety → cravings and weight drift.",
       "impact": [
         "Blood sugar: spikes and crashes can worsen fatigue/cravings.",
@@ -964,7 +1577,9 @@
       "evidence": {
         "level": "Strong",
         "summary": "Fiber-rich whole foods help keep hunger and blood sugar in check; sugar beverages do the opposite.",
-        "refs": ["HARVARD_FIBER"]
+        "refs": [
+          "HARVARD_FIBER"
+        ]
       }
     },
     {
@@ -973,12 +1588,23 @@
       "name": "Ultra-processed Salty Snacks",
       "subtitle": "chips/crackers",
       "emoji": "🧂",
-      "symptoms": ["bloating", "weight", "heart", "sleep"],
-      "tags": ["gluten_free", "dairy_free"],
+      "symptoms": [
+        "bloating",
+        "weight",
+        "heart",
+        "sleep"
+      ],
+      "tags": [
+        "gluten_free",
+        "dairy_free"
+      ],
       "isPlant": false,
       "price": 0,
       "unit": "limit",
-      "availability": ["Regular supermarket", "Convenience stores"],
+      "availability": [
+        "Regular supermarket",
+        "Convenience stores"
+      ],
       "benefit": "High sodium → water retention/bloating; low fiber; easy to overeat.",
       "impact": [
         "Bloating/water retention: sodium can worsen swelling and discomfort.",
@@ -992,7 +1618,9 @@
       "evidence": {
         "level": "Moderate",
         "summary": "Kidney stone guidance highlights sodium as a major driver of urinary calcium and risk.",
-        "refs": ["NKF_STONE_PREVENTION"]
+        "refs": [
+          "NKF_STONE_PREVENTION"
+        ]
       }
     },
     {
@@ -1001,12 +1629,22 @@
       "name": "Refined Carbs",
       "subtitle": "pastries/white bread",
       "emoji": "🥐",
-      "symptoms": ["blood_sugar", "weight", "fatigue", "mood"],
-      "tags": ["dairy_free"],
+      "symptoms": [
+        "blood_sugar",
+        "weight",
+        "fatigue",
+        "mood"
+      ],
+      "tags": [
+        "dairy_free"
+      ],
       "isPlant": true,
       "price": 0,
       "unit": "limit",
-      "availability": ["Regular supermarket", "Bakeries"],
+      "availability": [
+        "Regular supermarket",
+        "Bakeries"
+      ],
       "benefit": "Low fiber → hunger rebound; worsens cravings for many.",
       "impact": [
         "Blood sugar: spikes and crashes can worsen fatigue/cravings.",
@@ -1020,7 +1658,9 @@
       "evidence": {
         "level": "Strong",
         "summary": "Fiber helps regulate hunger and blood sugar—refined carbs remove that advantage.",
-        "refs": ["HARVARD_FIBER"]
+        "refs": [
+          "HARVARD_FIBER"
+        ]
       }
     },
     {
@@ -1029,12 +1669,21 @@
       "name": "Carbonated Beverages",
       "subtitle": "if bloating",
       "emoji": "🫧",
-      "symptoms": ["bloating", "gut"],
-      "tags": ["plant_only", "gluten_free", "dairy_free"],
+      "symptoms": [
+        "bloating",
+        "gut"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free"
+      ],
       "isPlant": true,
       "price": 0,
       "unit": "personal trigger",
-      "availability": ["Regular supermarket"],
+      "availability": [
+        "Regular supermarket"
+      ],
       "benefit": "Gas load can worsen bloating.",
       "impact": [
         "Bloating: can increase gas and discomfort."
@@ -1047,7 +1696,102 @@
       "evidence": {
         "level": "Emerging",
         "summary": "Bloating triggers vary; simplest experiment is a 1–2 week removal trial.",
-        "refs": ["HARVARD_FIBER"]
+        "refs": [
+          "HARVARD_FIBER"
+        ]
+      }
+    },
+    {
+      "type": "dont",
+      "id": 108,
+      "name": "Diet Soda / Artificially Sweetened Drinks",
+      "subtitle": "not a weight-loss free pass",
+      "emoji": "🥤",
+      "symptoms": [
+        "weight",
+        "blood_sugar",
+        "gut",
+        "mood",
+        "sleep"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "budget",
+        "low_fodmap"
+      ],
+      "isPlant": true,
+      "price": 0,
+      "unit": "limit",
+      "availability": [
+        "Regular supermarket",
+        "Restaurants"
+      ],
+      "benefit": "Can reduce added sugar, but non-sugar sweeteners don't reliably help long-term weight control for many people—watch your personal response.",
+      "impact": [
+        "Weight: WHO advises against using non-sugar sweeteners for weight control; long-term effects vary by person.",
+        "Blood sugar: replacing sugary drinks can lower sugar load; overall diet pattern still matters.",
+        "Gut/mood/sleep: some people notice cravings, GI changes, or sleep effects—track your pattern."
+      ],
+      "recipe": "Swap: sparkling water + citrus, unsweetened iced tea, or flavored seltzer without added sugar.",
+      "swap": "Sparkling water + lime / unsweetened iced tea / plain water + fruit infusion.",
+      "cautions": [
+        "If you use diet drinks to quit sugary soda, that's a reasonable step—but consider tapering sweetness over time.",
+        "Some observational studies in postmenopausal women have linked higher artificially sweetened beverage intake with urinary incontinence (association ≠ causation).",
+        "If reflux or bloating flares, do a 1–2 week removal trial and see what changes."
+      ],
+      "evidence": {
+        "level": "Mixed",
+        "summary": "WHO guideline recommends against using non-sugar sweeteners for weight control; individual outcomes vary and evidence quality differs by study type.",
+        "refs": [
+          "WHO_NSS_GUIDELINE",
+          "MAYO_SUGAR_SUBS",
+          "WHI_ASB_UI"
+        ]
+      }
+    },
+    {
+      "type": "dont",
+      "id": 109,
+      "name": "Sugar Alcohols in 'Sugar-Free' Candy/Gum",
+      "subtitle": "sorbitol/xylitol/etc. → gas/diarrhea",
+      "emoji": "🍬",
+      "symptoms": [
+        "bloating",
+        "gut",
+        "weight"
+      ],
+      "tags": [
+        "plant_only",
+        "gluten_free",
+        "dairy_free",
+        "low_fodmap"
+      ],
+      "isPlant": true,
+      "price": 0,
+      "unit": "limit",
+      "availability": [
+        "Regular supermarket",
+        "Pharmacy"
+      ],
+      "benefit": "Often causes gas/bloating/diarrhea (dose-dependent) and can keep a strong sweet-tooth loop going.",
+      "impact": [
+        "Bloating/gut: common trigger for gas, cramps, and loose stools—especially in IBS or low-FODMAP sensitivity.",
+        "Weight: 'sugar-free' snacks can still be calorie-dense; they may make cravings easier to keep going."
+      ],
+      "recipe": "Swap: fruit + nuts, plain yogurt (or unsweetened plant yogurt), or a small square of dark chocolate if tolerated.",
+      "swap": "Fruit + nuts / yogurt / small dark chocolate instead of sugar-free candy.",
+      "cautions": [
+        "Look for ingredients like sorbitol, mannitol, xylitol, maltitol, erythritol—tolerance varies, but GI effects are common at higher intakes.",
+        "If you need sugar-free gum for dry mouth, keep portions small and see how your gut responds."
+      ],
+      "evidence": {
+        "level": "Strong",
+        "summary": "Sugar alcohols commonly cause GI symptoms when intake is high; sensitivity varies person to person.",
+        "refs": [
+          "MAYO_SUGAR_SUBS"
+        ]
       }
     }
   ]
